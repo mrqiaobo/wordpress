@@ -1,0 +1,84 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/templates/cart
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+cart.php
+file
+
+
+
+add
+
+cross-sells.php
+file
+
+
+
+add
+
+cart-item-data.php
+file
+
+
+
+add
+
+cart-totals.php
+file
+
+
+
+add
+
+mini-cart.php
+file
+
+
+
+add
+
+cart-empty.php
+file
+
+
+
+add
+
+cart-shipping.php
+file
+
+
+
+add
+
+shipping-calculator.php
+file
+
+
+
+add
+

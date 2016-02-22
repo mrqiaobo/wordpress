@@ -1,0 +1,408 @@
+/*---Formulaires---*/
+
+Form{
+	text-align: left;
+	padding-left:10px;	
+}
+
+Form1{
+	text-align: left;
+}
+.FormR1{ width: 100%; height: auto;}
+.FormC1{ float: left; width: 240px; padding-left: 10px; }
+.FormC2{ float: right; width: 230px; padding-left: 10px; }
+
+label{
+	font-weight: bold;
+}
+
+.normal{
+	font-weight: normal;
+}
+
+Form input, Form1 input,
+Form select, Form1 select,
+Form textarea, Form1 textarea{
+	font-size: 10px;
+	font-weight: bold;
+	margin-right: 8px;
+}
+
+h3.FormSubtitle{
+	font-size: 14px;
+	padding:5px 0px 0px 10px;
+	color:#00267F;
+}
+
+h3.FormSubtitle1{
+	font-size: 11px;
+	color:#00267F;
+}
+
+.OblFieldsR,
+.OblFields{
+	font-size: 9px;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.OblFieldsR {
+	text-align:right;
+	margin-right:26px;
+}
+
+.FormRow{
+	width: 410px;
+	display: block;
+	min-height:  18px;
+	padding-left: 0px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.FormRow1{
+	display: block;
+	min-height:  18px;
+	margin-bottom: 6px;
+	text-align: left;
+}
+
+
+#signIn{
+	width:310px;
+	color: #84929F;
+	padding: 0px 10px;
+	float: left;
+}
+
+Form #signIn a{
+	color: #002B6D;
+}
+
+.signInR{
+	width: 300px;
+	margin-bottom: 5px;
+	float: left;
+	color: #002B6D;
+	font-weight: bold;
+}
+.signInC {
+	color: #002B6D;
+	font-weight: bold;
+	float: left;
+}
+
+.rempss{ padding-top:5px; display:block}
+
+.signInC1{
+	width: 140px;
+	color: #002B6D;
+	font-weight: bold;
+	float: left;
+}
+.signInC2{
+	width: 150px;
+	float: left;
+}
+
+.note{
+	font-size: 9px;
+	color: #002B6D;
+}
+
+.FormCol1{
+	width:150px;
+	float: left;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.FormCol2{
+	width:250px;
+	float: left;
+}
+
+.FormCol3{
+	width:110px;
+	float: left;
+}
+.FormCol4{
+	width:170px;
+	float: left;
+}
+
+.Field40{width: 40px;}
+.Field60{width: 60px;}
+.Field80{width: 80px;}
+.Field100{width: 100px;}
+.Field120{width: 120px;}
+.Field150{width: 150px;}
+.Field200{width: 200px;}
+.Field220{width: 220px;}
+.Field224{width: 224px;}
+.MessageZone{
+	width: 380px;
+	height: 85px;
+}
+.ContactSubject{
+	width: 370px;
+	height: 150px;
+}
+.MsgZone {
+	width: 220px;
+	height: 85px;
+}
+.bleu{
+	color:#0099CC;
+}
+
+input.Radiobutton,
+input.Checkboxft {
+	margin-right: 5px !important;
+	border: none !important;
+	float: left;
+}
+
+.LabelRadio,
+.LabelCheck{
+	padding-top: 3px;
+	margin-right: 20px;
+	float: left;
+}
+
+
+.Radiobutton .bleu{
+	padding: 0px 10px 10px 0px;
+}
+
+.guarante{
+	color: #737c82;
+	font-size: 10px;
+	width: 445px;
+	padding-bottom: 6px;
+	text-align: left;
+}
+
+.guarante a{
+	color:#0053a5;
+	font-size: 10px;
+}
+
+.guarante a:hover{
+	font-size: 10px;
+}
+
+.ReferedPage{
+	color: #113385;
+	font-size: 9px;
+}
+
+.boldUnderline{
+	text-decoration: underline;
+	font-weight: bold;
+}
+/*---Mydisneyland---*/
+
+.BoxHead{
+	margin-left:10px;
+	color: #002B6D;
+}
+.BoxHeadTxt{
+	text-align: left;
+	float: left;
+	width: 295px;
+	padding-left: 5px;
+}
+.BoxHeadRight{
+	width: 136px;
+	float: left;
+	text-align: right;
+	padding-right: 4px;
+}
+
+.TitleOrange{
+	color: #F47508;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*---Mydisneyland reasons---*/
+
+.reason{
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+.reasonLeft{
+	width: 46px;
+	float: left;
+}
+
+.reasonRight{
+	width: 430px;
+	float: left;
+}
+
+/*---Mydisneyland sign-in---*/
+
+.signInBox{
+	width: 497px;
+	text-align: left;
+}
+
+.signInBoxCenter .OblFields{
+	padding-left: 47px;
+	color: #002B6D;
+}
+
+#signInTab{
+	width: 475px;
+	margin: 0px 10px;
+	color: #002B6D;
+}
+
+.Warning{
+	width:160px;
+	height: auto;
+	font-size: 9px;
+	font-weight: bold;
+	color: #c92702;
+	float: left;
+}
+
+.WarningTop,
+.WarningBottom{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 6px;
+	font-size: 0px;
+}
+
+
+.WarningCenter{
+	background-color: #FFFDF1;
+	padding: 5px 0px;
+}
+
+
+.WarningTxt{
+	float: left;
+	width:124px;
+}
+
+.LinkForgot{
+	background-color: #FFFFFB;
+	margin: 0px 3px 0px 1px;
+}
+
+/*---Mydisneyland Not registered---*/
+
+.RegistrationBox{
+	width: 497px;
+	text-align: left;
+}
+
+.Rsltc1 {
+	width:210px;
+	float:left;
+}
+.Rsltc2 {
+	float:left;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+
+.checkbox{
+	border: none !important;
+}
+
+.error,.errorC2{
+	color: #C92702 !important;
+	font-weight: bold;
+	float: left;
+	text-align: left;
+}
+
+
+#error{
+	text-align: center;
+	width: 80%;
+}
+
+/*-----*/
+
+#login{
+	width: 510px;
+	background-image: url(separator-ver.gif);
+	background-position: 250px 0px;
+	background-repeat: repeat-y;
+}
+
+#loginLeft{
+	width: 240px;
+	padding-left: 10px;
+	float: left;
+}
+.loginR{
+	width: 100%;
+	display: block;
+	min-height:  18px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.loginC1{
+	width: 80px;
+	float: left;
+	
+}
+.loginC2{
+	/*width: 120px;*/
+	float: left;
+}
+
+#loginRight{
+	width: 245px;
+	padding-left: 15px;
+	float: left;
+	text-align: left;
+}
+
+.errorC1{
+	float: left;
+	padding-right: 10px;
+}
+.errorC2{
+	width: 200px;
+	font-size: 9px;
+}
+
+
+.Dedicated{
+	height: auto;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.linkSearch {
+	text-decoration: none;
+}
+
+
+.SearchSub .DateCol1{
+	WIDTH: 50px;
+}
+.SearchSub .DateCol2{
+	WIDTH: 250px;
+}
+
+.SearchSub {
+	WIDTH: 350px;
+	float:left;
+	MARGIN-LEFT: 25px	
+}

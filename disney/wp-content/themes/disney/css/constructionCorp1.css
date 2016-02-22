@@ -1,0 +1,2134 @@
+/*---Styles general navigation---*/
+
+html, body, form, div{
+	border: 0px solid;
+	margin: auto;
+	padding: 0px;
+	vertical-align: top;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #444444;
+	font-family: Song;
+	font-size: 12px;
+	overflow: auto;
+	text-align: center;
+}
+
+*+html body {
+	overflow-y:hidden;
+}
+
+p, ul{
+	color: #444444;
+	font-size: 13px;
+	text-align: left;
+	line-height:15px;
+	letter-spacing:0.2em;
+}
+
+.BlockJ7 p,
+.BlockD p,
+.BlockO p
+{
+	margin: 2px 0px 5px 0px;
+}
+
+img{
+	border: 0px solid;
+}
+
+a{
+	font-size: 13px;
+	color: #84929F;
+}
+
+a:hover{
+	font-size: 13px;
+	color: #FAA64C;
+}
+
+h1{
+	font-size: 20px;
+	text-align: left;
+}
+
+h2 {
+	font-family: Song;
+	text-align: left;
+	font-size: 17px;
+	margin: 0px;
+}
+
+h3{
+	color: #737c82;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+h4{
+	font-size: 11px;
+	text-align: left;
+	font-weight: bold;
+	margin: 0px;
+}
+h5{
+	font-family: Song;
+	color:#FFF3E0;
+	font-size: 15px;
+}
+
+/*---Header---*/
+
+#HeaderBar{
+	height: 20px;
+	text-align: right;
+	width: 770px;
+}
+
+#TopIcones{
+	float: right;
+	height: 16px;
+	margin: 4px 5px 0px 5px;
+	width: auto;
+}
+
+#TopIcones a{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separation.gif);
+	background-position: left;
+	background-repeat: no-repeat;
+	padding: 5px; 
+	color: #bc8157;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.newsletter{
+	float: right;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separation.gif);
+	background-position: 0 4px;
+	background-repeat: no-repeat;
+	margin-top:2px
+}
+
+.search{
+	float: right;
+	padding: 0px 5px;
+	text-align: left;
+	width: auto;
+	color: #bc8157;
+}
+
+.search img{
+	padding-top: 4px;
+}
+
+.alignSearch{
+	float: left;
+	padding: 3px;
+}
+
+.search input{
+	border: 1px solid #bc8157;
+	color: #bc8157;
+	font-size: 10px;
+	height: 12px;
+	width: 118px;
+}
+
+.search a,
+.search a:hover{
+	color: #bc8157;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#Header {
+	font-size: 0px;
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	margin: 0px auto;
+	padding: 0px;
+	width: 959px;
+	height: auto;
+}
+/*---BlockT----*/
+.BlockT h1{
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+}
+
+/*---Story Telling---*/
+.BlockST{
+	width: 600px;
+	margin-top: 45px;
+}
+
+#StoryTelling{
+	height: auto;
+	text-align: left;
+	width: auto;
+}
+
+.StoryLeft{
+	float: left;
+	padding-top: 5px;
+	max-width:430px;
+	z-index: 1;
+}
+
+.StoryLeftNK{
+	float: left;
+	padding-top: 5px;
+	width:100%;
+	z-index: 1;
+}
+
+h1.titleStory{
+	font-family: Song;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	z-index: 1;
+}
+
+h1.titleStoryHidden{
+	font-family: Song;
+	font-size: 18px;
+	line-height: 20px;
+	display: none;
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	z-index: 1;
+}
+
+#StoryTelling img{
+	padding: 0px 0px 5px 0px;
+	margin: 0;
+	line-height:15px;
+}
+
+#StoryTelling p{
+	padding: 0;
+	margin: 0;
+	line-height:15px;
+}
+#icons{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator.gif);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	padding-bottom: 3px;
+	text-align: left;
+}
+.BlockST > #icons{
+	padding-bottom: 5px;
+}
+
+#icons img{
+	margin-right: 5px;
+}
+
+.video{
+	margin-right: 20px;
+}
+
+
+
+/*---Lefter---*/
+
+
+#Lefter {
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	float: left;
+	width: 239px;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/pix-leftcolumn.jpg);
+}
+
+#MenuLefter{
+	width: auto;
+	height: auto;
+	margin-top: 30px;
+}
+
+
+.MenuLefterRLinked,
+.MenuLefterR{
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	height: auto;
+	padding-left: 13px;
+	text-align: left;
+	margin-bottom: 2px;
+}
+
+.MenuLefterR{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/pix-menu.jpg);
+}
+
+.MenuLefterRLinked{
+	background-color: #ffffff;
+}
+
+.MenuLefterRLinked a,.MenuLefterRLinked a:hover,
+.MenuLefterR a,.MenuLefterR a:hover {
+	background-position: 0px 7px;
+	background-repeat: no-repeat;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 3px 0px 2px 13px;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+
+.MenuLefterR2Linked,
+.MenuLefterR2{
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	height: auto;
+	padding-left: 33px;
+	text-align: left;
+	margin-bottom: 2px;
+	margin-top: -2px;
+	display: block;
+}
+
+.MenuLefterR2Hidden{
+	display: none;
+}
+
+.MenuLefterR2{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/pix-menu.jpg);
+}
+.MenuLefterR2Linked{
+	background-color: #ffffff;
+}
+.MenuLefterR2Inner{
+	height: auto;
+	padding-bottom:2px;
+	border-bottom:1px dotted #D5995D;
+}
+.MenuLefterR2Outer{
+	height: auto;
+	padding-bottom:2px;
+}
+.MenuLefterR2Linked a,.MenuLefterR2Linked a:hover,
+.MenuLefterR2 a,.MenuLefterR2 a:hover {
+	background-position: 0px 7px;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px 0px 0px 5px;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+
+.MenuLefterRLinked a,.MenuLefterR a {
+	color: #BC8157;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic-marron.gif);
+}
+
+.MenuLefterRLinkedDown a,.MenuLefterRDown a {
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic-marron-down.gif);
+	background-position: 0px 9px;
+}
+
+.MenuLefterR2Linked a,.MenuLefterR2 a {
+	color: #7D4110;
+}
+
+.MenuLefterR a:hover,.MenuLefterRLinked a:hover {
+	color: #FAA64C;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic_orange.gif);
+}
+
+.MenuLefterRDown a:hover,.MenuLefterRLinkedDown a:hover {
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic_orange-down.gif);
+	background-position: 0px 9px;
+}
+
+.MenuLefterR2 a:hover,.MenuLefterR2Linked a:hover {
+	color: #E19863;
+}
+
+/*---Push -- Lefter---*/
+
+.Push{
+	margin-top: 30px;
+	width: 220px;
+}
+
+.PageTitle{
+	padding: 0px 0px 0px 8px;
+}
+
+.PageTitleB {font-size: 22px}
+
+.PageTitle h1{
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+}
+.PageTitle h1:hover{
+	text-decoration:underline;
+}
+.PushTop,.PushBottom{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	font-size: 0px;
+	height: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.PushHead{
+	padding: 0px 15px;
+	z-index: 1;
+	float: left;
+	
+}
+
+.PushHead h2{
+	text-align: left;
+	z-index: 1;
+	display: block;
+}
+
+.PushCenter{
+	background-repeat: repeat-y;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/push_pix.gif);
+	color: #BC8157;
+	z-index: 3;
+	text-align: left;
+}
+
+.PushTop{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/push_top.gif);
+}
+
+.PushBottom{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/push_bottom.gif);
+}
+a.Pushlink {
+	background-position: 12px 8px;
+	background-repeat: no-repeat;
+	display: block;
+	font-family: Song;
+	font-size: 10px;
+	font-weight: 600;
+	height: 15px;
+	margin: 0px 1px;
+	padding: 5px 0px 0px 22px;
+	text-align: left;
+	text-decoration: none;
+}
+
+a.Pushlink:hover{
+	font-family: Song;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.H2Left{
+	font-size: 15px;
+}
+/*---Right Column---*/
+
+#Content {
+	background-color: #FFFFFF;
+	float: right;
+	padding: 0px;
+	width: 700px;
+}
+
+/*---Footer----*/
+
+#copyRightContainer {
+	font-size: 13px;
+}
+
+/*---Block K---*/
+
+.BlockK{
+	width: 497px;
+}
+
+.BlockKTop,
+.BlockKTop2{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	font-size: 0px;
+	width: 497px;
+	height: 7px;
+}
+
+.BlockKCenter{
+	width: 495px;
+}
+
+.BlockKR0{
+	margin-bottom: 2px;
+}
+
+.BlockKC1{
+	width: 207px;
+	height: auto;
+	padding:0px 15px 0px 0px;
+	float: left;
+}
+
+.BlockKC2{
+	width: 225px;
+	height: auto;
+	padding: 0px 0px 0px 15px;
+	float:left;
+}
+
+.BlockKR1{
+	width: auto;
+	text-align: left;
+	background-color: #F8EEDF;
+	margin-bottom: 1px;
+}
+
+.BlockKR2,
+.BlockKR3{
+	width: auto;
+	text-align: left;
+	padding:2px 15px;
+}
+
+.BlockKR3{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator-ver.gif);
+	background-position: 235px 0px;
+	background-repeat: repeat-y;
+}
+
+.BlockKR0C1,.BlockKR0C2{
+	font-weight: bold;
+}
+
+.BlockKR1C1{
+	color: #bc8157;
+}
+.BlockKR0C1,.BlockKR1C1{
+	width: 156px;
+	height: auto;
+	padding:2px 15px 8px 15px;
+	margin: 8px 0px;
+	float: left;
+	text-align: left;
+	font-weight: bold;
+}
+
+.BlockKR0C2,.BlockKR1C2{
+	width: 279px;
+	height: auto;
+	padding:2px 15px 8px 15px;
+	margin: 8px 0px;
+	float:left;
+	text-align: left;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator-ver.gif);
+	background-position: 0 0;
+	background-repeat: repeat-y;
+}
+
+.EventButton{
+	float: left;
+	width: 15px;
+	padding-right: 8px;
+}
+
+.EventTitle{
+	float: left;
+	width: 256px;
+}
+
+.EventText{
+	padding: 15px 0px 0px 23px;
+	width: auto;
+}
+/*---*/
+.DownloadSearch{
+	width: auto;
+	height: 70px;
+	padding: 0px 5px;
+	margin-bottom: 3px;
+}
+
+.TitleContact{
+	height: auto;
+	padding: 8px 15px 15px 15px;
+	background-color: #D1DBE6;
+}
+
+.TitleContact h2{
+	color: #5D87B3;
+}
+
+.ContactInfo{
+	width: 465px;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator-ver.gif);
+	background-position: 238px 0;
+	background-repeat: repeat-y;
+}
+
+.ContactInfoC1{
+	width: 223px;
+	padding-right: 15px;
+	float: left;
+	text-align: left;
+}
+
+.ContactInfoC2{
+	width: 212px;
+	padding-left: 15px;
+	float: right;
+	text-align: left;
+}
+
+.ContactInfo h3{
+	color: #bc8157;
+}
+
+.BlockKBottom{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	font-size: 0px;
+	width: 497px;
+	height: 10px;
+}
+
+.NumItems{
+	text-align: left;
+	font-size: 10px;
+	font-weight: bold;
+	padding-left: 30px;
+	margin-bottom: 15px;
+}
+
+.NavigP	{
+	font-size: 10px;
+	text-decoration: none;	
+}
+
+.NavigP a{
+	font-size: 10px;
+	text-decoration: none;	
+}
+
+.NavigP a:hover {
+	font-size: 10px;
+	text-decoration: none;	
+}
+
+a.Linked{
+	color: #84929F !important;
+}
+/*------*/
+/*--- Block D J7 G Q SO ---*/
+#noLeftContentBG{
+	background-color:#FFF3E0;
+	width: 620px;
+	height: auto;
+	padding: 5px 0px 5px 0px;
+}
+
+.BlockD, .BlockQ{
+	display: block;
+	height: auto;
+	text-align: left;
+	width: 600px;
+	padding-left: 5px;
+}
+
+
+.BlockSO{
+	display: block;
+	height: auto;
+	text-align: left;
+	width: auto;
+}
+
+.BlockQPrice{
+	font-weight: bold;
+	padding: 0px 0px 3px 0px;	
+}
+
+.BlockQRight p,
+.BlockQNoImg p{
+	margin: 2px 0px;
+}
+
+.BlockJ7 {
+	display: block;
+	height: auto;
+	text-align: left;
+	width: 470px;
+}
+
+
+.BlockJ7NoImg ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+.BlockJ7Right li,
+.BlockJ7NoImg li{
+	padding:0px;
+	margin-left: 15px;
+}
+
+a.BlockDTitle,a.BlockNTitle,
+a.BlockJ7Title{
+	font-size: 17px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.BlockDTitle:hover,a.BlockNTitle:hover,a.BlockJ7Title:hover{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.BlockSO h2,
+.BlockD h2, 
+.BlockJ7 h2{
+	font-family: Song;
+	font-size: 17px;
+	margin: 0px 0px 15px 0px;
+}
+
+.BlockDLeft,
+.BlockQLeft, .BlockJ7Left{
+	height: auto;
+	padding-right: 15px;
+	vertical-align: top;
+	width: 182px;
+	float: left;
+	font-weight:normal;
+}
+ .BlockJ7Left2{
+	height: auto;
+	padding-right: 15px;
+	vertical-align: top;
+	width: 132px;
+	float: left;
+}
+.BlockDRight,
+.BlockQRight{
+	width: 400px;
+	float: left;
+	height: auto;
+	vertical-align: top;
+	font-weight:normal;
+	font-size: 13px;
+	letter-spacing:0.2em;	
+}
+.BlockDRight,
+.BlockQRight p{
+	font-size: 13px;
+	letter-spacing:0.2em;
+}
+.BlockJ7Right{
+	height: auto;
+	vertical-align: top;
+	width: 270px;
+	float: left;
+	text-align:left;
+}
+
+.BlockJ7Right2{
+	height: auto;
+	vertical-align: top;
+	width: 320px;
+	float: left;
+	text-align:left;
+}
+
+.BlockDNoImg,
+.BlockQNoImg{
+	height: auto;
+	width: 499px;
+}
+
+a.BlockQTitle{
+	float:left;
+	padding:3px 0px 0px 0px;
+	font-size: 17px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.BlockQTitle:hover{
+	float:left;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.BlockJ7NoImg {
+	height: auto;
+	width: 470px;
+	float:left;
+	text-align:left;	
+}
+
+
+a.link1,a.link1:hover,
+a.link3,a.link3:hover {
+	background-position: 0px 4px;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0px 0px 0px 13px;
+	text-decoration: none;
+	text-align: left;
+}
+
+/*--- Block N ---*/
+
+.BlockN{
+	text-align:left;
+	padding: 0px 10px;
+}
+
+.BlockN p{
+	margin: 2px 0px 10px 0px;
+}
+
+a.BlockNTitle{
+	font-size: 17px;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*--- Block J ---*/
+.BlockJ{
+	height: auto;
+	text-align: left;
+	width: 497px;
+}
+
+.BlockJTop{
+	background-position: 0 0;
+	background-repeat: repeat;
+	font-size: 0px;
+	height: 31px;
+	width: 496px;
+}
+
+.BlockJCenter{
+	padding: 0px 10px;
+}
+
+.BlockJCenterP {font-size:9px;}
+
+.BlockJ > .BlockJCenter{
+	padding: 30px 10px 0px 10px;
+}
+
+
+
+.BlockJBottom{
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height: 27px;
+}
+
+.tabButtonOn,.tabButtonOff{
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 31px;
+	text-align: center;
+	vertical-align: middle;
+	width: 124px;
+}
+
+.tabButtonVide,.tabButtonVide2,.tabButtonVide3{
+	height: 31px;
+	text-align: center;
+	vertical-align: middle;
+	width: 124px;
+}
+
+.tabButtonOff2,.tabButtonOn2, .tabButtonOff3{
+	background-position: right;
+	background-repeat: no-repeat;
+	cursor: pointer;	
+	height: 31px;
+	text-align: center;
+	vertical-align: middle;
+	width: 124px;
+}
+
+.tabButtonOn a,.tabButtonOff a,.tabButtonOff2 a,.tabButtonOn2 a, .tabButtonOff3 a{
+	font-family: Song;
+	font-size: 11px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#line0{
+	height:31px; 
+	position:relative; 
+	z-index:1
+}
+
+#line1{
+	height:31px; 
+	position:relative; 
+	top:31px; 
+	z-index:1
+}
+
+#line2{
+	height:31px; 
+	position:relative; 
+	top:-31px;
+}
+
+/*------*/
+
+.lineSeparation{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator.gif);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	font-size: 0px;
+	height: 1px;
+	margin: 0px auto;
+	padding: 0px;
+	width: 95%;
+}
+
+
+/*---Select Options  footer ---*/
+
+.selectOptions{
+	background-color: #FFFFFF;
+	border: 1px solid #965921;
+	height: auto;
+	width: 162px;
+	text-align: left;
+	z-index: 1;
+	position: absolute;
+	margin-top:5px;
+	margin-left: 75px;
+}
+
+.selectOptions li{
+	margin: 0px 5px;
+	padding: 0;
+}
+
+.selectOptions ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.selectOptions a,
+.selectOptions a:hover{
+	color: #965921;
+	display: block;
+	font-size: 10px;
+	padding: 3px 0px;
+	text-decoration: none;
+	width: 100%;
+}
+
+
+/*---------------------Other styles------------------------------*/
+
+.clear,.space,.space3,.space5,.spacel,.spacel5,.space25,.space30,.space50{
+	clear: both;
+	font-size: 0px;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 0px;
+}
+
+.space5 {height:5px;}
+.space3 { height:3px;}
+.space{height: 15px;}
+.spacel{height: 10px;}
+.spacel5{height: 15px;}
+.space25{height: 25px;}
+.space30{height: 30px;}
+.space50{height: 50px;}
+
+.line,
+.lineSp{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator.gif);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	font-size: 0px;
+	height: 1px;
+	padding: 0px;
+	width: auto;
+}
+
+.line{
+	margin: 0px 10px;
+}
+
+.lineSep{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/sep2.gif);
+	background-position: center;
+	background-repeat: repeat-x;
+	clear: both;
+	height: 30px;
+	padding: 0px;
+	width: 480px;
+}
+
+.TxtPad{
+	padding: 0px 15px;
+	text-align: left;
+	height: auto;
+	z-index: 2;
+}
+
+.txt{
+	padding: 0px 10px;
+	text-align: left;
+	height: auto;
+	z-index: 2;
+}
+
+.italic{
+	font-style: italic;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.pad{
+	display: block;
+	font-size: 11px;
+	padding: 15px;
+	text-align: left;
+	width: auto;
+	z-index: 1;
+}
+
+.center{
+	text-align: center;
+}
+
+.list{
+	padding-left:11px;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/circle.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+}
+
+.ftLeft{
+	float:left;
+	
+}
+
+.boldUnderline{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.TitleLeft{
+	float:left;
+	max-width:230px;
+}
+
+.alignTop{
+	vertical-align: top;
+}
+
+/*
+.stars{
+	float:left;
+	width: 38px;
+	height: 33px;
+	background-image: url(/CORP/EN/Neutral/Images/stars.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding-bottom: 2px;
+}
+
+.keys{
+	float:left;
+	padding-left: 10px;
+	padding-top: 1px;
+}
+*/
+.Storykeys{
+	float:left;
+	width: 75px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.txtSmall{ font-size: 9px; }
+
+/*---BlockSP---*/
+.BlockSP{
+	width:600px;
+}
+.BlockSP img{
+	float: left;
+	padding-left: 10px;
+}
+/*###################################### New modules corporate ####################################*/
+/*---BlockU---*/
+
+
+.BlockU {
+	display: block;
+	height: auto;
+	text-align: left;
+	width: 482px;
+	padding: 5px 0px;
+	margin-bottom: 3px;
+}
+
+
+.BlockU p{
+	margin: 5px 0px;
+}
+
+.BlockULeft{
+	height: auto;
+	vertical-align: top;
+	width: 81px;
+	float: left;
+}
+
+
+.BlockURight{
+	height: auto;
+	vertical-align: top;
+	width: 396px;
+	padding-left: 5px;
+	float: left;
+	text-align:left;
+}
+
+.BlockUNoImg h3,
+.BlockURight h3{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/cercle-gris.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 15px;
+	color:#84929f;
+}
+
+.BlockUNoImg {
+	height: auto;
+	width: 440px;
+	float:left;
+	text-align:left;	
+}
+
+/*---BlockO---*/
+
+.BlockO {
+	height: auto;
+	text-align: left;
+	width: 482px;
+	/*padding: 5px 0px;*/
+}
+
+.BlockOR1 {
+	height: auto;
+	width: 100%;
+	float:left;
+	text-align:left;	
+}
+
+.BlockO h3{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/cercle-gris.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 15px;
+	color:#84929f;
+}
+
+/*---BlockS---*/
+.BlockS{
+
+	text-align: center;
+	width: 497px;
+}
+
+/*---BlockJ14---*/
+
+.BlockJ14{
+	text-align: center;
+	width: 465px;
+}
+
+
+.BlockJ14 p
+{
+	margin: 5px 0px;
+	color: #737c82;
+}
+
+/*---Glosary---*/
+.Glosary{
+	width: 500px;
+	height: auto;
+}
+
+.GlosaryLine1{
+	padding-left: 25px;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/stars-left.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: auto;
+}
+
+.GlosaryLine2{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/stars-right.gif);
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	width: auto;
+}
+
+/*---BlockW---*/
+.BlockW{
+	width: 497px;
+	height: auto;
+	background-image:url(separator-ver.gif);
+	background-position: 249px 0px;
+	background-repeat: repeat-y;
+	text-align: left;
+}
+
+.BlockWC1{
+	width: 228px;
+	height: auto;
+	padding-right: 20px;
+	float: left;
+}
+
+.BlockWC2{
+	width: 229px;
+	height: auto;
+	padding-left: 20px;
+	float: left;
+}
+
+.BlockW dl{
+	margin: 0;
+	padding:0;
+}
+
+.BlockW dt{
+	margin: 0;
+	padding: 0;
+}
+
+.BlockW dd{
+	margin: 0px 0px 15px 0px;
+	padding: 0;
+}
+
+.BlockW dt{
+	padding-bottom: 8px;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.IconDt{
+	background-position: 0px;
+	background-repeat: no-repeat;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/file-icon.gif);
+	padding-left: 12px;
+}
+
+.BlockW ul{
+	margin:0px 10px;
+	padding:0px;
+}
+.BlockW li{
+	padding:0px;
+	margin: 3px 0px;
+}
+
+.date{
+	font-weight: bold;
+	font-size: 10px;
+}
+
+/*---Stock---*/
+
+.Stock{
+	width: 228px;
+	height: auto;
+	color: #5d87b3;
+}
+
+.StockTop,
+.StockBottom{
+	width: 228px;
+	height: 8px;
+	font-size: 0px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.StockTop{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/stock-top.gif);
+}
+
+.StockBottom{
+	background-image:url(stock-bottom.gif);
+}
+
+.StockR1{
+	background-color: #DFE7F0;
+	border-bottom: 1px solid #ffffff;
+	padding: 0px 8px 8px 8px;
+}
+
+.StockR2{
+	background-color: #DFE7F0;
+	padding: 0px 8px;
+}
+
+.StockC1{
+	float: left;
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+.StockC2{
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+/*---Financial Data---*/
+
+.FinancData{
+	width: 465px;
+}
+
+.TabFinanc{
+	width: 465px;
+}
+
+.TabFinancHead{
+	width: 100%;
+	margin-bottom: 2px;
+	background-color: #D7E4F1;
+}
+
+.TabFinancR{
+	width: 100%;
+	margin-bottom: 1px;
+	background-color: #F7EEDF;
+}
+
+.TabFinancC1,
+.TabFinancH1{
+	width: 243px;
+	padding:4px 0px 6px 12px;
+	float: left;
+	background-position: 5px 10px;
+	background-repeat: no-repeat;
+}
+
+.TabFinancC1{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/investor-dot.jpg);
+}
+
+.TabFinancC2,.TabFinancC3,.TabFinancC4,
+.TabFinancH2,.TabFinancH3,.TabFinancH4{
+	width: 60px;
+	padding:4px 10px 6px 0px;
+	text-align: right;
+	float: left;
+}
+
+.TabFinancH1,.TabFinancH2,.TabFinancH3,.TabFinancH4{
+	font-weight: bold;
+	color: #5d87b3;
+}
+
+.TabFinancC2,.TabFinancC3,.TabFinancC4{
+	color: #bc8157;	
+}
+
+
+/*---Site Map---*/
+
+#SiteMap{
+text-align: left;	
+}
+
+#SiteMap h2{
+	color:#A17CB4;
+	padding:0px 10px;
+	background-position:0px 8px;
+	background-repeat:no-repeat;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/general-tools-pic1.gif);
+	margin-left: 10px;
+}
+
+/*CFT*/
+#SiteMap h2  a, h2  a:hover{
+	color:#A17CB4;
+	font-family: Song;
+	text-align: left;
+	font-size: 17px;
+	margin: 0px;	
+	text-decoration: none;
+}
+
+#SiteMap h2  a:hover{
+	color: #FAA64C;
+}
+/*end CFT*/
+
+.MapRow{
+	padding-left: 40px;
+}
+
+
+.MapCol{
+	text-align:left;
+	width:49%;
+	height:auto;
+	float:left;
+	padding-top:10px;
+}
+
+.MapCol li{
+	list-style: none;
+	padding:0px 10px;
+	background-position:0px 4px;
+	background-repeat:no-repeat;
+}
+
+li.subtitle1{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/general-tools-pic1.gif);
+}
+
+li.subtitle1 a{
+	color:#9267A8;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+li.subtitle1 a:hover{
+	color: #FAA64C;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+li.subtitle2{
+	margin-left: 10px;	
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/general-tools-pic1.gif);	
+}
+
+li.subtitle2 a{
+	color: #84929F;
+	text-decoration: none;
+}
+
+li.subtitle2 a:hover{
+	color: #FAA64C;
+	text-decoration: none;
+}
+.MapCol ul{
+	padding:0px;
+	margin:2px 0px;
+}
+
+/*---ButtonB---*/
+
+.ButtonB{ 
+	width: 110px;
+	float: left;
+}
+
+.ButtonB1{ 
+	width: 95px;
+	float: right;
+}
+
+.RowButton{
+	width: 475px;
+}
+
+.ButtonB3{ 
+	width: 235px;
+	float: right;
+}
+
+
+.ButtonBLeft,
+.ButtonBRight{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height:18px;
+	float:left;
+	cursor: pointer;	
+}
+
+.ButtonBLeft{
+	width:9px;
+}
+
+.ButtonBCenter{
+	width:auto;
+	height:14px;
+	float:left;
+	background-repeat:repeat-x;
+	padding:2px 2px 4px 2px;
+	cursor: pointer;	
+}
+
+.ButtonBCenter a,
+.ButtonBCenter a:hover{
+	background-position: 0px 4px;
+	background-repeat: no-repeat;
+	font-size: 10px;
+	font-weight: bold;
+	padding-left: 8px;
+	text-decoration: none;
+	text-align: left;
+}
+
+.ButtonBRight{
+	width:9px;
+}
+
+/*---Search result---*/
+
+.BlockSearch{
+	width: auto;
+	height: 17px;
+	background-color: #EDEEEF;
+	padding: 0px 5px;
+}
+
+.BlockSearchLeft{
+	float: left;
+}
+
+.BlockSearchRight{
+	float: right;
+}
+
+#Form dl{
+	margin: 0;
+	padding:0;
+}
+
+#Form dt,#Form dd{
+	margin: 0;
+	padding-left: 12px;
+}
+
+#Form dt{
+	padding-bottom: 8px;
+	background-position: 0px 4px;
+	background-repeat: no-repeat;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/general-tools-pic1.gif);
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dd{font-size: 11px;}
+
+#Form dd a{
+	font-style: italic;
+	font-size:11px;
+	text-decoration: none;
+}
+
+.sort{
+	text-align:right; 
+	padding-right:15px; 
+	font-size:9px;
+}
+
+img.ico{
+	padding-right: 5px;
+}
+
+.dateClub {
+	font-weight:bold;
+	font-size:9px;
+}
+
+.language {
+	padding-left:10px;
+	width: 475px;
+}
+
+.chooselang {float:left;}
+
+.country {
+	padding-left:12px;
+	float:left;
+}
+
+/*a.country {
+	margin-right:6px;
+	width:22px;
+	height:13px;
+}*/
+
+.Blocksearchby {
+	height:42px;
+	padding:15px 5px;
+	color:#FFFFFF;
+}
+
+.Blocksearchby h2 {
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	float:left;
+}
+
+.SearchSub {
+	float:left;
+	margin-left:70px;
+}
+
+.DateCol1 {
+	float:left;
+	margin-right:19px;
+	padding-top:2px;
+	width:70px;
+	font-weight:bold;
+}
+
+.DateCol2 {
+	float:left;
+}
+
+.dateProduit {
+	padding:8px 15px;
+	font-weight:bold;
+	display:block;
+}
+
+.NewsPress {
+	padding:8px 15px;
+	font-weight:bold;
+	height:14px
+}
+
+
+/*---BlockJ13---*/
+
+
+.BlockJ13 {
+	display: block;
+	height: auto;
+	text-align: left;
+	width: 495px;
+	margin-bottom: 3px;
+	padding: 8px 0px;
+	background-color: #F8EEDF;
+}
+
+
+.BlockJ13Left{
+	height: auto;
+	vertical-align: top;
+	width: 110px;
+	text-align: center;
+	float: left;
+	background-color: transparent;
+}
+
+
+.BlockJ13Right{
+	height: auto;
+	vertical-align: top;
+	width: 380px;
+	padding-left: 5px;
+	float: left;
+	text-align:left;
+}
+
+
+.BlockJ13NoImg {
+	height: auto;
+	width: auto;
+	float:left;
+	text-align:left;	
+}
+
+/*---BlockX---*/
+
+.BlockX{
+	width: 475px;
+}
+
+.BlockXR {
+	height: auto;
+	padding: 0px;
+	vertical-align: top;
+	width: 445px;
+	margin: 20px 0px 0px 0px;
+}
+
+/*---BlockX---*/
+
+.BlockY{
+	width: 465px;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator-ver.gif);
+	background-position: 233px 0;
+	background-repeat: repeat-y;
+}
+
+.BlockYLeft{
+	width: 217px;
+	height: auto;
+	float: left;
+}
+
+.BlockYRight{
+	width: 217px;
+	height: auto;
+	float: right;
+}
+
+.BlockYR,
+.BlockYR1{
+	width: auto;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator.gif);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	padding: 5px 8px 10px 8px;
+	color: #bc8157;
+	font-size: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.BlockYR1{
+	background-color: #F3DEB9;
+}
+
+/*---Block R---*/
+
+.BlockR{
+	text-align: left;
+	width: 465px;
+}
+
+.BlockRR .BlockRC1{
+	float: left;
+	text-align: left;
+	width: 110px;
+}
+
+.BlockRR .BlockRC2{
+	float: left;
+	text-align: center;
+	width: 18px;
+}
+
+.BlockRR .BlockRC3{
+	float: left;
+	text-align: left;
+	width: 335px;
+	padding-left: 5px;
+}
+
+.BlockRC3 ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+.BlockRC3 li{
+	padding:0px;
+	margin-left: 15px;
+	list-style-image: url(investor-dotlist.gif);
+}
+
+.BlockR h4{
+	color: #5D87B3;
+}
+/*--- Media center ---*/
+
+.MediaCenter{
+	width: auto;
+	height: auto;
+	padding: 0px 15px;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator-ver.gif);
+	background-position: 375px 0;
+	background-repeat: repeat-y;
+}
+
+.MediaCenterLeft,.MediaCenterRight{
+	width: 349px;
+	padding: 0px 10px;
+	height: auto;
+	text-align: left;
+	float: left;
+}
+
+#Bottom{
+	color: #965921;
+	font-size: 10px;
+}
+
+/*---home page---*/
+
+a.ClickHere{
+	color: #965921;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+a.ClickHere:hover{
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+/*--- press release ----*/
+
+.NewsPressRight {
+	float:right;
+}
+
+.NewsPressLeft {
+	float:left;
+}
+
+.produitR {
+	height:45px;
+	padding:10px 0px 0px 15px;
+}
+.produitRC1 {
+	float:left;
+	width: 130px;
+}
+
+.produitRC2 {
+	float:left;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/separator-ver.gif);
+	background-repeat: repeat-y;
+	background-position:left;
+	padding-left:15px;
+	height:34px;
+	width: 332px;
+}
+
+.pdfRC2{float:left;}
+
+.pdfRC2 span {font-weight:normal;}
+
+.pdfRC2 a {
+	background-repeat:no-repeat;
+	background-position:left;
+	padding-left:25px;
+	color:#AE2C00;
+	font-weight:bold;
+	text-decoration: none;
+	height:20px;
+	display:block;
+	padding-top:5px;
+}
+
+/*---Block I---*/
+
+.BlockI{
+	text-align:left;
+	width:497px;
+	height:auto;
+}
+
+.BlockICn{
+	text-align:left;
+	/*width:49%;*/
+	width: auto;
+	height:auto;
+	float:left;
+	padding-top:10px;
+}
+
+.BlockICn ul{
+	padding:0px;
+	margin:0px;
+}
+
+.BlockICn li{
+	list-style: none;
+	padding:0px 10px;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/_global/cercle-gris.gif);
+	background-position:0px 6px;
+	background-repeat:no-repeat;
+}
+
+/* Table */
+
+.BlockTable td {
+	border-bottom:2px #FFFFFF solid;
+	padding:4px 3px 4px 3px;
+	font-size:10px;
+}
+
+.BlockTable {
+	border:0;
+	width: 470px;
+}
+
+.BlockTableInTab td {
+	border-bottom:2px #FFFFFF solid;
+	padding:4px 3px 4px 3px;
+	font-size:10px;
+}
+
+.BlockTableInTab {
+	border:0;
+	width: 450px;
+}
+
+.RowShare {
+	font-weight:bold;
+}
+
+.ColShare1 {
+	width:100px;
+}
+
+.TabShareC1 {
+	width:75px;
+}
+
+.TabShareC2 {width:90px;}
+
+.ColCode {width:50px;}
+
+.ColName {width:140px;}
+
+
+.TitleSocialRight { 
+	float:right;
+	padding-right:6px;
+	padding-top:5px;
+}
+
+
+.TitleEvent { 
+	float:right;
+	padding-right:6px;
+	padding-top:5px;
+}
+
+.ImgClub {
+	margin-top:23px;
+	width:220px;
+}
+
+.condition {
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.TitreSharLeft {
+	float:left;
+}
+
+.TitreSharRight { 
+	padding-right:12px;
+	padding-top:5px;
+	float:right;
+}
+
+.NoDisplay{
+	display:none;
+}
+
+.Display{
+	display:block;
+}
+
+.ZoomImage{
+	position:absolute;
+	left:-50px;	
+	top:-100px;	
+}
+
+
+#printButton{
+display:none;
+float:none;
+}
+
+.BlockJ .BlockN p{
+	margin: 2px 0px 0px 0px;
+}
+
+table.blueTD {
+  border-collapse: collapse;
+}
+table.blueTD th {
+  color: white;
+  background-color: #094198;
+}
+
+#recruitmentConent table.greenTD {
+  border-collapse: collapse;
+}
+#recruitmentConent table.greenTD th {
+  color: white;
+  background-color: #808000;
+}
+
+#recruitmentConent .photoLeft {
+	height: auto;
+	margin: 10px 10px 10px 15px;
+	vertical-align: top;
+	width: 182px;
+	float: left;
+	font-weight:normal;
+}
+
+#recruitmentConent .contentRight {
+	width: 400px;
+	float: left;
+	height: auto;
+	vertical-align: top;
+	font-weight:normal;
+	padding-top: 10px;
+}
+/* New Nav BEGIN */
+.mainMenu li#menuItem1 {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -512px -315px transparent;
+}
+.mainMenu li#menuItem2 {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -420px -315px transparent;
+}
+.mainMenu li#menuItem3 {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -266px -315px transparent;
+}
+.mainMenu li#menuItem4 {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -142px -315px transparent;
+}
+.mainMenu li#menuItem5 {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -18px -315px transparent;
+}
+.mainMenu #menuItem1:hover > a.mainMenuPanel {
+  background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -512px -365px transparent;
+}
+.mainMenu #menuItem2:hover > a.mainMenuPanel {
+  background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -420px -365px transparent;
+}
+
+.mainMenu #menuItem3:hover > a.mainMenuPanel {
+  background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -266px -365px transparent;
+}
+
+.mainMenu #menuItem4:hover > a.mainMenuPanel {
+  background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -142px -365px transparent;
+}
+
+.mainMenu #menuItem5:hover > a.mainMenuPanel {
+  background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -18px -365px transparent;
+}
+.mainMenu li.menuItem a#careersButton {
+	width: 118px;
+}
+.mainMenu li.menuItem a#environmentalityButton {
+	width: 86px;
+}
+.mainMenu li.menuItem a#corporateCitizenshipButton {
+	width: 148px;
+}
+.mainMenu li.menuItem a#pressRoomButton {
+	width: 118px;
+}
+.mainMenu li.menuItem a#aboutOurCompanyButton {
+	width: 118px;
+}
+.dropmenu .listingOfMenu li a#companyOverviewButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -503px transparent;
+}
+.dropmenu .listingOfMenu li a#boardOfDirectorButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -526px transparent;
+}
+.dropmenu .listingOfMenu li a#managementTeamButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -549px transparent;
+}
+.dropmenu .listingOfMenu li a#companyOverviewButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -711px -503px transparent;
+}
+.dropmenu .listingOfMenu li a#boardOfDirectorButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -711px -526px transparent;
+}
+.dropmenu .listingOfMenu li a#managementTeamButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -711px -549px transparent;
+}
+.dropmenu .listingOfMenu li a#compassionButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll 0 -658px transparent;
+}
+.dropmenu .listingOfMenu li a#conservationButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll 0 -681px transparent;
+}
+.dropmenu .listingOfMenu li a#creativityButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll 0 -704px transparent;
+}
+.dropmenu .listingOfMenu li a#compassionButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -231px -658px transparent;
+}
+.dropmenu .listingOfMenu li a#conservationButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -231px -681px transparent;
+}
+.dropmenu .listingOfMenu li a#creativityButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -231px -704px transparent;
+}
+.dropmenu .listingOfMenu li a#aboutDisneyEnvironmentalityButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -736px transparent;
+}
+.dropmenu .listingOfMenu li a#whatsNewButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -759px transparent;
+}
+.dropmenu .listingOfMenu li a#environmentalManagementButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -782px transparent;
+}
+.dropmenu .listingOfMenu li a#usefulLinksButton {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -805px transparent;
+}
+.dropmenu .listingOfMenu li a#aboutDisneyEnvironmentalityButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -711px -736px transparent;
+}
+.dropmenu .listingOfMenu li a#whatsNewButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -711px -759px transparent;
+}
+.dropmenu .listingOfMenu li a#environmentalManagementButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -711px -782px transparent;
+}
+.dropmenu .listingOfMenu li a#usefulLinksButton:hover {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -711px -805px transparent;
+}
+/* New Nav END */

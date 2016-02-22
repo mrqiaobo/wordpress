@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/includes/emails
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+class-wc-email-customer-invoice.php
+file
+
+
+
+add
+
+class-wc-email-customer-reset-password.php
+file
+
+
+
+add
+
+class-wc-email-customer-new-account.php
+file
+
+
+
+add
+
+class-wc-email-new-order.php
+file
+
+
+
+add
+
+class-wc-email.php
+file
+
+
+
+add
+
+class-wc-email-cancelled-order.php
+file
+
+
+
+add
+
+class-wc-email-customer-completed-order.php
+file
+
+
+
+add
+
+class-wc-email-customer-note.php
+file
+
+
+
+add
+
+class-wc-email-customer-processing-order.php
+file
+
+
+
+add
+

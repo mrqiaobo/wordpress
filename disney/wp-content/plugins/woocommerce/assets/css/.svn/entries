@@ -1,0 +1,210 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/assets/css
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+reports-print.css
+file
+
+
+
+add
+
+admin.css
+file
+
+
+
+add
+
+_mixins.scss
+file
+
+
+
+add
+
+woocommerce-layout.css
+file
+
+
+
+add
+
+_variables.scss
+file
+
+
+
+add
+
+select2.css
+file
+
+
+
+add
+
+_animation.scss
+file
+
+
+
+add
+
+activation.css
+file
+
+
+
+add
+
+prettyPhoto.css
+file
+
+
+
+add
+
+chosen.scss
+file
+
+
+
+add
+
+woocommerce.scss
+file
+
+
+
+add
+
+menu.css
+file
+
+
+
+add
+
+woocommerce-smallscreen.scss
+file
+
+
+
+add
+
+dashboard.scss
+file
+
+
+
+add
+
+_fonts.scss
+file
+
+
+
+add
+
+admin.scss
+file
+
+
+
+add
+
+reports-print.scss
+file
+
+
+
+add
+
+woocommerce-layout.scss
+file
+
+
+
+add
+
+chosen.css
+file
+
+
+
+add
+
+woocommerce.css
+file
+
+
+
+add
+
+activation.scss
+file
+
+
+
+add
+
+prettyPhoto.scss
+file
+
+
+
+add
+
+select2.scss
+file
+
+
+
+add
+
+woocommerce-smallscreen.css
+file
+
+
+
+add
+
+dashboard.css
+file
+
+
+
+add
+
+menu.scss
+file
+
+
+
+add
+

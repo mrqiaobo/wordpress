@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/templates/myaccount
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+form-edit-address.php
+file
+
+
+
+add
+
+form-login.php
+file
+
+
+
+add
+
+my-downloads.php
+file
+
+
+
+add
+
+my-account.php
+file
+
+
+
+add
+
+form-edit-account.php
+file
+
+
+
+add
+
+my-orders.php
+file
+
+
+
+add
+
+form-add-payment-method.php
+file
+
+
+
+add
+
+form-lost-password.php
+file
+
+
+
+add
+
+view-order.php
+file
+
+
+
+add
+
+my-address.php
+file
+
+
+
+add
+

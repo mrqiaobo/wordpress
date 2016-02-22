@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/includes/widgets
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+class-wc-widget-top-rated-products.php
+file
+
+
+
+add
+
+class-wc-widget-recent-reviews.php
+file
+
+
+
+add
+
+class-wc-widget-product-categories.php
+file
+
+
+
+add
+
+class-wc-widget-product-search.php
+file
+
+
+
+add
+
+class-wc-widget-products.php
+file
+
+
+
+add
+
+class-wc-widget-price-filter.php
+file
+
+
+
+add
+
+class-wc-widget-recently-viewed.php
+file
+
+
+
+add
+
+class-wc-widget-layered-nav.php
+file
+
+
+
+add
+
+class-wc-widget-cart.php
+file
+
+
+
+add
+
+class-wc-widget-layered-nav-filters.php
+file
+
+
+
+add
+
+class-wc-widget-product-tag-cloud.php
+file
+
+
+
+add
+

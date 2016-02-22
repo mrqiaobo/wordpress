@@ -1,0 +1,161 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/templates
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+archive-product.php
+file
+
+
+
+add
+
+single-product.php
+file
+
+
+
+add
+
+cart
+dir
+
+
+
+add
+
+product-searchform.php
+file
+
+
+
+add
+
+content-single-product.php
+file
+
+
+
+add
+
+single-product
+dir
+
+
+
+add
+
+content-widget-product.php
+file
+
+
+
+add
+
+global
+dir
+
+
+
+add
+
+myaccount
+dir
+
+
+
+add
+
+notices
+dir
+
+
+
+add
+
+content-product_cat.php
+file
+
+
+
+add
+
+checkout
+dir
+
+
+
+add
+
+single-product-reviews.php
+file
+
+
+
+add
+
+taxonomy-product_cat.php
+file
+
+
+
+add
+
+loop
+dir
+
+
+
+add
+
+emails
+dir
+
+
+
+add
+
+order
+dir
+
+
+
+add
+
+taxonomy-product_tag.php
+file
+
+
+
+add
+
+content-product.php
+file
+
+
+
+add
+

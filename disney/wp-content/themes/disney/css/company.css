@@ -1,0 +1,254 @@
+h1 {
+	color: #763046;
+}
+
+h2 {
+	color: #BC8157;
+}
+
+h2.H2Left {
+	color: #BC8157;
+}
+
+a.link1 {
+	color: #9F6E7D;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/company-pic1.gif);
+}
+
+a.link2 {
+	color:#763046;
+	text-decoration: none;
+}
+
+a.link3 {
+	color: #BC8157;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic-marron.gif);
+}
+
+a.link2:hover  {
+	color: #FAA64C;
+}
+
+
+a.link1:hover,a.link3:hover {
+	color: #FAA64C;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic_orange.gif);
+}
+
+a.link1:hover,a.link3:hover {
+	color: #FAA64C;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic_orange.gif);
+}
+
+.frame180x110{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/company-frame180x110.gif);
+}
+/*
+.frame180x270{
+	background-image: url(../images/company/company-frame180x270.gif);
+}*/
+
+/*---Title Story Telling---*/
+h1.titleStory{
+	color: #763046;
+}
+
+a.Pushlink {
+	background-color: #F9EFDC;
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/pic-marron.gif);
+	border-bottom: 1px solid #F3DEB9;
+	color: #BC8157;
+}
+a.Pushlink:hover{
+	color: #FAA64C;
+	background-image: url(pic_orange.gif);
+}
+
+div#BoardOfDirectorsPage ul li {
+	color: #444444;
+	letter-spacing:0.2em;
+	font-size:13px;
+}
+
+/*---Footer---*/
+
+#Footer{
+	background-image: url(http://ahongkongdisneyland.disney.go.com/media/hkdlcorp_v0100/zh_CN/aboutOurCompany/company-footer.jpg);
+	}
+
+
+/*---block D Q---*/
+
+a.BlockJ1Title, a.BlockJ7Title, a.BlockJ3Title, a.BlockJ4Title, 
+a.BlockNTitle, a.BlockDTitle, a.BlockGTitle, a.BlockQTitle,
+a.BlockJ11Title, a.BlockPTitle, a.BlockJ8Title{
+	color: #BC8157;
+}
+
+a.BlockJ1Title:hover, a.BlockJ4Title:hover, a.BlockJ7Title:hover,
+a.BlockJ3Title:hover, a.BlockNTitle:hover, a.BlockDTitle:hover,
+a.BlockGTitle:hover, a.BlockQTitle:hover, a.BlockJ11Title:hover,
+a.BlockPTitle:hover, a.BlockJ8Title:hover{
+	color: #763046; 
+}
+
+.BlockQPrice{
+	color: #763046;
+}
+
+.BlockPPrice,.BlockJ8Price{
+	color: #fdae3e;
+}
+
+.Linkorange{
+	color: #FAA64C;
+}
+
+.BlockJ8 ul,.BlockP ul,
+.BlockJ8 li,.BlockP li{
+	color: #84929F;
+}
+
+.BlockD h4{
+	color: #763046;
+}
+
+/*---Block J Tab---*/
+
+.BlockJTop{
+	background-image: url(company-tab_pix.jpg);
+	border-left: 1px solid #AC818F;
+}
+
+.tabButtonVide{
+	background-image: url(company-tab_pix.jpg);
+}
+
+.BlockJCenter{
+	border-left: 1px solid #AC818F;
+	border-right: 1px solid #AC818F;
+}
+
+.BlockJBottom{
+	background-image: url(company-tab_bottom.gif);
+}
+
+.tabButtonOn{
+	background-image: url(company-tab_button_on.gif);
+}
+
+.tabButtonOff{
+	background-image: url(company-tab_button_off.gif);
+}
+
+.tabButtonOff2{
+	background-image: url(company-tab_button2_off.gif);
+}
+
+.tabButtonOff3{
+	background-image: url(company-tab_button3_off.gif);
+}
+
+.tabButtonOn2{
+	background-image: url(company-tab_button2_on.gif);
+}
+.tabButtonVide2{
+	background-image: url(company-tab_button.gif);
+}
+
+.tabButtonVide3{
+	background-image: url(company-tab_button2.gif);
+}
+
+.tabButtonOn2 a,
+.tabButtonOn a,
+.tabButtonOff a,
+.tabButtonOff2 a, 
+.tabButtonOff3 a{
+	color: #763046;
+}
+
+.prix{
+	color: #763046;
+}
+
+/*---Block O---*/
+
+.atrcselect{
+ 	border: 1px solid #763046;
+	color: #763046;
+}
+	
+
+/*--- Block SO ---*/
+
+.ButtonBLeft{
+	background-image: url(company-bleft.gif);
+}	
+.ButtonBCenter{
+	background-image: url(company-bpix.gif);
+}
+.ButtonBRight{
+	background-image: url(company-bright.gif);
+}
+
+/*---BlockN---*/
+
+.BlockNTitle{
+	color: #763046;
+}
+
+/*---Block K---*/
+
+.BlockKTop{
+	background-image:url(company-blokk-top.gif);
+}
+
+.BlockKCenter{
+	border-left: 1px solid #763046;
+	border-right: 1px solid #763046;
+}
+
+.BlockKRn{
+	color: #763046;
+}
+
+.BlockKBottom{
+	background-image:url(company-blokk-bottom.gif);
+}
+
+.NumItems{
+	color: #763046;
+}
+
+.NavigP	{
+	color: #763046;
+}
+
+.NavigP a{
+	color: #763046;
+}
+
+.NavigP a:hover {
+	color: #763046;
+}
+/*---Block N---*/
+.subtitleN{
+	color: #BC8157;
+}
+
+#Form input, #Form1 input,
+#Form select, #Form1 select,
+#Form textarea, #Form1 textarea{
+	color:#763046;
+	border: 1px solid #763046;
+}
+.PageTitleB a:link {text-decoration: none; color: #763046; font-size: 22px}
+.PageTitleB a:visited {text-decoration: none; color: #763046; font-size: 22px}
+.PageTitleB a:active {text-decoration: none; color: #763046; font-size: 22px}
+.PageTitleB a:hover {text-decoration: underline; color: #763046;font-size: 22px}
+/*.PageTitleB a:hover {text-decoration: none; color: #4C2A30;font-size: 22px}*/
+
+h1 {
+color:#763046;
+}

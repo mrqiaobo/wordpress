@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/templates/checkout
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+form-login.php
+file
+
+
+
+add
+
+form-pay.php
+file
+
+
+
+add
+
+review-order.php
+file
+
+
+
+add
+
+payment-method.php
+file
+
+
+
+add
+
+payment.php
+file
+
+
+
+add
+
+form-billing.php
+file
+
+
+
+add
+
+form-shipping.php
+file
+
+
+
+add
+
+thankyou.php
+file
+
+
+
+add
+
+cart-errors.php
+file
+
+
+
+add
+
+form-coupon.php
+file
+
+
+
+add
+
+form-checkout.php
+file
+
+
+
+add
+

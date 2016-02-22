@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/assets/js
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+chosen
+dir
+
+
+
+add
+
+frontend
+dir
+
+
+
+add
+
+zeroclipboard
+dir
+
+
+
+add
+
+stupidtable
+dir
+
+
+
+add
+
+prettyPhoto
+dir
+
+
+
+add
+
+select2
+dir
+
+
+
+add
+
+jquery-blockui
+dir
+
+
+
+add
+
+jquery-cookie
+dir
+
+
+
+add
+
+jquery-tiptip
+dir
+
+
+
+add
+
+admin
+dir
+
+
+
+add
+
+jquery-payment
+dir
+
+
+
+add
+

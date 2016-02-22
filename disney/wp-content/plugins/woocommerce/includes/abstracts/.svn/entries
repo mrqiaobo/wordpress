@@ -1,0 +1,84 @@
+10
+
+dir
+0
+http://192.168.1.100/Casino/svn/cms/documents/Team/mobile-manager/DEV/wordpress/wp-content/plugins/woocommerce/includes/abstracts
+http://192.168.1.100/Casino/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d55341e8-d5d6-0410-a2d1-3f52b8cf0fba
+
+abstract-wc-integration.php
+file
+
+
+
+add
+
+abstract-wc-session.php
+file
+
+
+
+add
+
+abstract-wc-widget.php
+file
+
+
+
+add
+
+abstract-wc-settings-api.php
+file
+
+
+
+add
+
+abstract-wc-order.php
+file
+
+
+
+add
+
+abstract-wc-payment-gateway.php
+file
+
+
+
+add
+
+abstract-wc-shipping-method.php
+file
+
+
+
+add
+
+abstract-wc-product.php
+file
+
+
+
+add
+

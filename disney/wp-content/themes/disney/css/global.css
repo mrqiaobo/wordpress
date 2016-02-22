@@ -1,0 +1,264 @@
+/*  page styles  */
+
+#globalHeader {
+	box-shadow: 0 8px 7px -6px grey;
+	-webkit-box-shadow: 0 8px 7px -6px grey;
+	-moz-box-shadow: 0 8px 7px -6px grey;
+	width: 959px;
+	position: relative;
+	z-index: 10;
+}
+#toolBar {
+	width: 959px;
+	height: 20px;
+}
+
+a.languageToggle {
+	color: #04519b;
+	text-decoration: none;
+	width: 65px;
+	margin: 2px 0 2px 4px;
+	border: 1px solid #cfdfed;
+	float: right;
+	font-size: 11px;
+	font-family: Verdana,arial,SimSun,sans-serif;
+	height: 14px;
+	font-weight: bold;
+}
+
+a.languageToggle:active, a.languageToggle:hover {
+	color: #cfdfed;
+	font-size: 11px;
+	font-family: Verdana,arial,sans-serif;
+}
+.globalNav {
+	width: 959px;
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll 0 0 transparent;
+	height: 67px;
+}
+
+.logo a {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll 0 -155px transparent;
+	float: left;
+	height: 54px;
+	width: 228px;
+	margin: 8px 0 0 20px;
+	text-indent: -9999px;
+}
+.hide {
+	display: none;
+}
+
+.globalNav ul {
+	list-style-type: none;
+}
+.mainMenuBar {
+	width: 632px;
+	height: 33px;
+	margin: 34px 2px 0 0;
+	padding: 0;
+}
+.menuContainer, .mainMenuBar {
+	float: right;
+}
+.mainMenu {
+	margin: 0;
+	padding: 0;
+}
+.mainMenuPanel {
+	display: block;
+	height: 33px;
+}
+.mainMenu li.menuItem {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.mainMenu li.menuItem:hover {
+  position:relative;
+  z-index:3000;
+}
+.navSep {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -431px -227px transparent;
+	float: right;
+	height: 23px;
+	width: 2px;
+	margin: 6px 1px 3px 2px;
+}
+.mainMenu .menuItem .dropmenu {
+  visibility: hidden;
+  position:absolute;
+  left:-9999px;
+}
+
+.mainMenu .menuItem:hover .dropmenu,
+.mainMenu .menuItem:active .dropmenu,
+.mainMenu .menuItem:focus .dropmenu {
+  visibility: visible;
+  left: auto;
+  width: auto !important;
+}
+
+.mainSection {
+	padding: 0;
+}
+.mainMenu .menuItem:hover .dropmenulast
+ {
+  left: auto;
+  right: -5px;
+}
+
+.submenu-bd {
+    zoom:1;
+    margin: 0;
+    background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") repeat-y scroll -659px -161px transparent;
+}
+
+.dropmenu .listingOfMenu {
+    padding: 10px 0;
+}
+
+.dropmenu .listingOfMenu li {
+    padding: 0;
+    margin: 0 0 5px;
+}
+
+.dropmenu .listingOfMenu li a {
+    display: block;
+    margin: 0;
+    height: 20px;
+	width: 227px;
+}
+
+.clearfixA {zoom:1;}
+.clearfixA:after {
+    content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+.promoTiles {
+	background: #fff;
+	display: table;
+	padding: 20px 0;
+	width: 959px;
+}
+.promoBox {
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 299px;
+	text-decoration: none;
+	margin: 0 0 0 20px;
+}
+
+.promoLink img {
+	float: left;
+	height: 90px;
+	position: relative;
+	width: 160px;
+}
+.promoText {
+	position: relative;
+	margin-left: 174px;
+	width: 122px;
+	text-align: left;
+	height: 83px;	
+}
+.promoTitle {
+	height: 63px;
+	margin: 7px 0 0 0;
+}
+.promoBox p {
+	font-size: 11px;
+	font-weight: bold;
+	color: #7f90aa;
+	margin: 0;
+	display: inline-block;
+}
+.promoBox:hover p {
+	color: #46505e;
+}
+.arrowIcon {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -156px transparent;
+	display: inline-block;
+	height: 7px;
+	width: 4px;
+	margin: 0 9px 0 0;
+}
+.promoBox:hover .arrowIcon {
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll -480px -165px transparent;
+}	
+.promoSeparator {
+	display: inline-block;
+	width: 1px;
+	height: 80px;
+	top: 5px;
+	background: linear-gradient(#dfdfdf, #a1afc0, #dfdfdf) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background-color: #dfdfdf \9;
+	float: left;
+	position: relative;
+}
+#footer {
+	position: relative;
+	width: 959px;
+	height: 80px;
+	background: url("../../../media/hkdlcorp_v0100/corp_sprites.png") no-repeat scroll 0 -69px transparent;
+}
+
+.HomePage_CORPORATE #footer {
+	background: url("../../../media/hkdlcorp_v0100/footer/new_home_footer.png") repeat-x scroll 0 0 transparent;
+	box-shadow: 0 3px 11px 1px black;
+	-webkit-box-shadow: 0 3px 11px 1px black;
+	-moz-box-shadow: 0 3px 11px 1px black;
+}
+
+.footerLinksContainer {
+	padding: 20px 0 15px;
+}
+
+.footerLinkRow {
+	padding: 0 0 5px;
+}
+
+.footerLinkRow span, .footerLinkRow span a {
+	color: #965921;
+}
+
+.footerLink {
+	padding: 0 5px;
+}
+.footerLinkRow span a {
+	text-decoration: none;
+}
+
+.footerLinkRow span a:active, .footerLinkRow span a:hover {
+	text-decoration: underline;
+}
+
+#copyRightContainer {
+	position: relative;
+	width: 959px;
+	height: 100px;
+	padding: 25px 0;
+}
+.HomePage_CORPORATE #copyRightContainer,
+.HomePage_CORPORATE .footerLinkRow span,
+.HomePage_CORPORATE .footerLinkRow span a { 
+ 	color: #008dd5;
+}
+#copyRightContainer .symbol {
+	
+}
+/*---Container---*/
+
+#Container {
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	width: 959px;
+	height: auto;
+	background-image: url(../../../media/hkdlcorp_v0100/en_US/_global/pix-leftcolumn.jpg);
+	border-right: 1px solid #D9B290;
+	overflow: auto;
+	padding-bottom:50px;
+	width: 958px \9;
+}
