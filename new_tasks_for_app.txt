@@ -1,0 +1,21 @@
+
+ Philip Ding: 腾讯：http://android.myapp.com/myapp/detail.htm?apkName=com.tencent.mm
+Jacob
+豌豆荚：http://www.wandoujia.com/apps/com.tencent.mm                      
+Keven
+百度：http://shouji.baidu.com/software/item?docid=8828716&f=sug@software
+Philip
+360：http://www.liqucn.com/rj/22709.shtml
+小米：http://app.mi.com/detail/1122?ref=search
+[17:39:48] Philip Ding: PHP Simple HTML DOM Parser
+[17:41:57] Philip Ding: 腾讯：http://android.myapp.com/myapp/detail.htm?apkName=com.tencent.mm
+豌豆荚：http://www.wandoujia.com/apps/com.tencent.mm                      
+百度：http://shouji.baidu.com/software/item?docid=8828716&f=sug@software
+360：http://www.liqucn.com/rj/22709.shtml
+小米：http://app.mi.com/detail/1122?ref=search
+
+DB -> Simple HTML DOM Parser
+Query -> Excel -> PHPExcel
+[17:42:53] Philip Ding: 定时执行任务 -> Philip
+Store to DB -> Simple HTML DOM Parser -> Jacob
+Query -> Excel -> PHPExcel -> Keven
