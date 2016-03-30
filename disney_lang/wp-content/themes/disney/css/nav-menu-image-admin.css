@@ -1,0 +1,38 @@
+.menu-item-images a.set-post-thumbnail {
+    height: auto;
+    padding:10px;
+    min-width: 200px;
+    min-height: 50px;
+    border-width:2px;
+    text-align:center;
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-item-images p.description-thin:hover a.set-post-thumbnail {
+	border-color: #555;
+}
+
+.menu-item-images p.description-thin {
+	position:relative;
+	width: auto;
+}
+.menu-item-images p.description-thin .remove-post-thumbnail {
+	display:none;
+}
+
+.menu-item-images p.description-thin:hover .remove-post-thumbnail {
+
+    position:absolute;
+    top:10px;
+    right:0;
+    display:block;
+    padding-top:0px;
+    width:20px;
+    height:20px;
+    color:#fff;
+    font-size:12px;
+    text-align:center;
+    vertical-align:middle;
+    background:#555;
+}

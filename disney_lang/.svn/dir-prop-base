@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 44
+.buildpath
+.project
+.settings
+wp-config.php
+
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat
+END
+random_bytes_dev_urandom.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/random_bytes_dev_urandom.php
+END
+random_bytes_openssl.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/random_bytes_openssl.php
+END
+byte_safe_strings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/byte_safe_strings.php
+END
+random_int.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/random_int.php
+END
+random_bytes_libsodium.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/random_bytes_libsodium.php
+END
+random.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/random.php
+END
+random_bytes_com_dotnet.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/random_bytes_com_dotnet.php
+END
+error_polyfill.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/error_polyfill.php
+END
+random_bytes_mcrypt.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/random_bytes_mcrypt.php
+END
+cast_to_int.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/Casino/svn/!svn/ver/45043/cms/documents/Team/mobile-manager/DEV/wordpress/wp-includes/random_compat/cast_to_int.php
+END

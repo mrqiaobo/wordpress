@@ -1,0 +1,113 @@
+
+// constant
+@post-content-padding-bottom: 40px;
+@post-content-padding-top: 10px;
+
+@post-font-family: Song;
+@post-text-align: left;
+@post-letter-spacing: normal;
+
+@post-title-font-size: 14px;
+@post-title-padding-top: 20px;
+
+@post-sub-title-padding: 0 0 5px 0;
+
+@post-sub-item-padding: 30px 0 0 0;
+@post-sub-item-margin: 0;
+
+@post-left-part-float: left;
+@post-left-part-padding: 0;
+
+@post-right-part-padding: 0;
+@post-right-part-p-font-size: 13px;
+@post-right-part-font-color: #444444;
+@post-right-part-line-height: 15px;
+@post-right-part-letter-spacing: 0.2em;
+
+@post-content-padding-left-sm: 15px;
+@post-content-padding-left-md: 40px;
+
+@post-right-part-padding-xs: 10px 0 0 0;
+@post-right-part-padding-sm: 10 0 0 0px;
+@post-right-part-padding-md: 0 0 0 40px;
+
+
+// css
+.post-content {
+	padding-bottom: @post-content-padding-bottom; 
+	padding-left: @post-content-padding-left-sm;
+	padding-top: @post-content-padding-top;
+	width: 74%;
+	float: right;
+	
+	h1, h2, a, p {
+		font-family: @post-font-family;
+		text-align: @post-text-align;
+		letter-spacing: @post-letter-spacing;
+	}
+	
+	p, ul  {
+		font-size: @post-right-part-p-font-size;
+		color: @post-right-part-font-color;
+		line-height: @post-right-part-line-height;
+		letter-spacing: @post-right-part-letter-spacing;
+	}
+	
+	.post-title {
+		font-size: @post-title-font-size;
+		padding-top: @post-title-padding-top;
+	}
+	
+	.post-sub-title {
+		padding: @post-sub-title-padding;
+		margin:0;
+	}
+	
+	.post-sub-item {
+		padding: @post-sub-item-padding;
+		margin: @post-sub-item-margin;
+	}
+	
+	.post-left-part {
+		float: @post-left-part-float;
+		padding: @post-left-part-padding;
+	
+		img {
+			float: @post-left-part-float;
+			width: 180px;
+			height: 110px;
+			border-radius: 15px;
+		}
+	}
+
+	.post-right-part {
+		padding: @post-right-part-padding;
+		text-align: left;
+	}
+}
+
+@media (max-width: 768px) {
+	.post-content {
+		.post-right-part {
+			padding: @post-right-part-padding-xs;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.post-content {
+		padding-left: @post-content-padding-left-md;
+		
+		.post-right-part {
+			padding: @post-right-part-padding-sm;
+		}
+	}
+}
+
+@media (min-width:992px) {
+	.post-content {
+		.post-right-part {
+			padding: @post-right-part-padding-md;
+		}
+	}
+}

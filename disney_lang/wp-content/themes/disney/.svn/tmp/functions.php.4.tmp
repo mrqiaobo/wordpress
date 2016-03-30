@@ -1,0 +1,408 @@
+<?php
+require_once get_template_directory () . '/inc/class-walker-nav-menu-second-level.php';
+require_once get_template_directory () . '/inc/class-walker-promo-tiles-menu.php';
+require_once get_template_directory () . '/inc/class-walker-footer.php';
+require_once get_template_directory () . '/inc/class-disney-theme-configuration.php';
+
+new Disney_Theme_Configuration ();
+
+$disney_top_navigation_name;
+$disney_nav_menu_items;
+$disney_current_page_top_item_id;
+
+/**
+ *
+ * @author : jacob qiao
+ * @param $id: curent
+ *            menu item's id
+ * @param $location :
+ *            the location for menu
+ * @return the object of top menu item
+ */
+function get_top_menu_item($id, $location = "navigation-menu") {
+	if ($menu_name = get_menu_name_by_location ( $location )) {
+		if ($top_id = get_top_menu_item_id ( $menu_name, $id )) {
+			return get_term ( $top_id );
+        }
+    }
+    return false;
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @param
+ *            $menu_name
+ * @param
+ *            $current_term_id
+ * @return the father item's id for current menu item.
+ */
+function get_father_menu_item_id($menu_name, $current_term_id) {
+	if (($current_term_id != 0) && ($menu = get_item_from_nav_menu ( $menu_name, $current_term_id ))) {
+		$parent = get_post_meta ( $menu->menu_item_parent, '_menu_item_object_id' );
+		$result = $parent [0];
+        return $result;
+    }
+
+    return false;
+}
+
+/**
+ *
+ * @author : Jacob Qiao
+ * @param
+ *            $menu_name
+ * @param
+ *            $curent_term_id
+ * @return the top menu item's term_id
+ */
+function get_top_menu_item_id($menu_name, $curent_term_id) {
+	if (($parent_id = get_father_menu_item_id ( $menu_name, $curent_term_id )) === false) {
+        return false;
+    }
+
+    if ($parent_id == 0) {
+        return $curent_term_id;
+    }
+	return get_top_menu_item_id ( $menu_name, $parent_id );
+}
+
+/**
+ *
+ * @author : Jacob Qiao
+ * @param $menu_name: the
+ *            menu's name
+ * @param unknown $menu_name
+ */
+function get_current_parent_id_from_menu($menu_name) {
+	$current_id = get_queried_object_id ();
+	$parent_menu = get_father_menu_item_id ( $menu_name, $current_id );
+    return $parent_menu;
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @return thumnnail src address from current menu item's super item.
+ */
+function get_the_image_url_from_top_menu_item() {
+    global $disney_top_navigation_name;
+
+	if (empty ( $disney_top_navigation_name )) {
+		$disney_top_navigation_name = get_menu_name_by_location ();
+    }
+    $menu_name = $disney_top_navigation_name;
+	$current_id = get_queried_object_id ();
+
+	if ($top_menu_item_id = get_top_menu_item_id ( $menu_name, $current_id )) {
+		$thumbnail_menu_item = get_item_from_nav_menu ( $menu_name, $top_menu_item_id );
+
+        if ($thumbnail_menu_item != null) {
+			$thumbnail_id = get_post_thumbnail_id ( $thumbnail_menu_item->ID );
+			$srcs = wp_get_attachment_image_src ( $thumbnail_id, "full" ); // px :large >medium > thumbnail >full
+			$src = $srcs [0];
+
+            return $src;
+        }
+    }
+
+    return "";
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @param
+ *            $menu_name
+ * @param
+ *            $id
+ * @return the object in menu by id.
+ */
+function get_item_from_nav_menu($menu_name, $id) {
+    global $disney_nav_menu_items;
+
+	if (! isset ( $disney_nav_menu_items )) {
+		$menu = wp_get_nav_menu_object ( $menu_name );
+		$items = wp_get_nav_menu_items ( $menu->term_id, array (
+            'update_post_term_cache' => false
+		) );
+        $disney_nav_menu_items = $items;
+    }
+
+	foreach ( $disney_nav_menu_items as $menu_item ) {
+        if ($id == $menu_item->object_id) {
+            return $menu_item;
+        }
+    }
+    return null;
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @param string $location_name
+ * @return return the menu name in the location.
+ */
+function get_menu_name_by_location($location_name = "navigation-menu") {
+	if (! has_nav_menu ( $location_name )) {
+        return false;
+    }
+	
+	$locations = get_nav_menu_locations ();
+	$nav = wp_get_nav_menu_object ( $locations [$location_name] );
+<<<<<<< .mine
+
+    if ($nav != false) {
+        return $nav->name;
+    }
+    return false;
+}
+
+
+
+// Add class Waker_Nav_Menu_Second_Level
+require_once (ABSPATH . 'wp-admin/includes/nav-menu.php');
+require_once get_template_directory() . '/inc/class-walker-nav-menu-second-level.php';
+require_once get_template_directory() . '/inc/class-walker-promo-tiles-menu.php';
+require_once get_template_directory() . '/inc/class-walker-footer.php';
+require_once get_template_directory() . '/inc/class-menu-image-walker-nav-menu-edit.php';
+
+add_action('current_screen', 'conditional_includes');
+
+function conditional_includes()
+{
+    $screen = get_current_screen();
+    if ($screen->id == 'dashboard') {
+        include (get_template_directory() . '/inc/class-disney-dashboard.php');
+    }
+}
+
+function language_selector_flags()
+{
+    $languages = icl_get_languages('skip_missing=0&orderby=code');
+    if (! empty($languages)) {
+        foreach ($languages as $l) {
+            echo '<li class="list-unstyled"><a href="' . $l['url'] . '">' . $l['translated_name'] . '</a></li>';
+        }
+    }
+}
+
+
+add_action('after_setup_theme', 'my_theme_setup');
+
+function my_theme_setup()
+{
+    load_theme_textdomain('disney', get_template_directory() . '/languages');
+}
+
+
+/**Add menu-image start**/
+add_post_type_support("nav_menu_item", "thumbnail");
+add_filter( 'manage_nav-menus_columns','menu_image_nav_menu_manage_columns', 11 );
+add_action( 'admin_head-nav-menus.php', 'menu_image_admin_head_nav_menus_action' );
+add_action( 'wp_ajax_set-nav-menu-item-thumbnail',  'wp_ajax_set_nav_menu_item_thumbnail');
+add_action( 'admin_action_delete-menu-item-image',  'menu_image_delete_menu_item_image_action' );
+add_action( 'save_post_nav_menu_item', 'menu_image_save_post_action' , 10, 3 );
+add_action("admin_init", "menu_image_init");
+
+/**
+ * add custom walker and filter to edit nav
+ * @author:jacob.qiao
+ */
+function menu_image_init()
+{
+    // Add custom field for menu edit walker
+    if (! has_action('wp_nav_menu_item_custom_fields')) {
+        add_filter('wp_edit_nav_menu_walker', 'menu_image_edit_nav_menu_walker_filter');
+    }
+    // Add image selector to walker.
+    add_action('wp_nav_menu_item_custom_fields', 'menu_item_custom_fields', 10, 1);
+}
+
+/**
+ * return image select div.
+ * @author jacob.qiao
+ * @param  $item_id
+ */
+function menu_item_custom_fields( $item_id ) { ?>
+		<div class="field-image hide-if-no-js wp-media-buttons">
+			<?php echo wp_post_thumbnail_html( $item_id ) ?>
+		</div>
+	<?php
+}
+
+/**
+ * return the custom walker class
+ * @author: jacob.qiao
+ */
+function menu_image_edit_nav_menu_walker_filter()
+{
+    return 'Menu_Image_Walker_Nav_Menu_Edit';
+}
+
+/**
+ * get the post thumbnail html
+ * @author:jacob.qiao
+ * @param unknown $item_id
+ * @return
+ */
+function wp_post_thumbnail_html($item_id)
+{
+     $default_size=array(200,120,false);
+    $content = wp_post_thumbnail_only_html($item_id);
+    $image_size = get_post_meta($item_id, '_menu_item_image_size', true);
+
+    if (! $image_size) {
+        $image_size = $default_size;
+    }
+    $title_position = get_post_meta($item_id, '_menu_item_image_title_position', true);
+    if (! $title_position) {
+        $title_position = apply_filters('menu_image_default_title_position', 'after');
+    }
+
+    ob_start();
+    ?>
+<div class="menu-item-image-options">
+	<p class="description description-wide">
+		<label for="edit-menu-item-image-size-<?php echo $item_id; ?>"><?php _e( 'Image size', 'menu-image' ); ?>
+					<br /> <select
+			id="edit-menu-item-image-size-<?php echo $item_id; ?>"
+			class="widefat edit-menu-item-image-size"
+			name="menu_item_image_size[<?php echo $item_id; ?>]">
+				<option value='full'
+					<?php echo $image_size == 'full' ? ' selected="selected"' : '' ?>><?php _e( 'Original Size', 'menu-image' ) ?></option>
+						<?php
+
+    foreach (get_intermediate_image_sizes() as $size) :
+        printf("<option value='%s'%s>%s</option>\n", esc_attr($size), $image_size == $size ? ' selected="selected"' : '', ucfirst($size));
+        ?>
+						<?php endforeach; ?>
+					</select> </label>
+	</p>
+	<p class="description description-wide">
+		<label><?php _e( 'Title position', 'menu-image' ); ?></label><br />
+				<?php
+    $positions = array(
+        'hide' => __('Hide', 'menu-image'),
+        'above' => __('Above', 'menu-image'),
+        'below' => __('Below', 'menu-image'),
+        'before' => __('Before', 'menu-image'),
+        'after' => __('After', 'menu-image')
+    );
+    foreach ($positions as $position => $label) :
+        printf("<label><input type='radio' name='menu_item_image_title_position[%s]' value='%s'%s/> %s</label>%s", $item_id, esc_attr($position), $title_position == $position ? ' checked="checked"' : '', $label, $position != 'after' ? ' | ' : '');
+    endforeach
+    ;
+    ?>
+
+			</p>
+</div>
+
+<?php
+    $content = "<div class='menu-item-images' style='min-height:70px'>$content</div>" . ob_get_clean();
+    return apply_filters('admin_menu_item_thumbnail_html', $content, $item_id);
+}
+
+/**
+ * get the thumbnail select button and label
+ * @author:jacob qiao
+ * @param unknown $item_id
+ * @return string
+ */
+function wp_post_thumbnail_only_html($item_id)
+{
+    $default_size=array(200,120,false);
+    $markup = '<p class="description description-thin" ><label>%s<br /><a title="%s" href="#" class="set-post-thumbnail button%s" data-item-id="%s" style="height: auto;">%s</a>%s</label></p>';
+    $thumbnail_id = get_post_thumbnail_id($item_id);
+    $content = sprintf($markup, esc_html__('Menu image', 'disney'), $thumbnail_id ? esc_attr__('Change menu item image', 'disney') : esc_attr__('Set menu item image', 'disney'), '', $item_id, $thumbnail_id ? wp_get_attachment_image($thumbnail_id, $default_size) : esc_html__('Set image', 'disney'), $thumbnail_id ? '<a href="#" class="remove-post-thumbnail">' . __('x', 'disney') . '</a>' : '');
+
+    return $content;
+}
+
+/**
+ * Add menu media js script and custom css script to admin
+ * @author:jacob.qiao
+ */
+function menu_image_admin_head_nav_menus_action() {
+    wp_enqueue_script( 'nav-menu-image-admin', '/wp-content/themes/disney/js/nav-menu-image-admin.js' , array( 'jquery' ) );
+    wp_localize_script(
+        'nav-menu-image-admin', 'menuImage', array(
+            'l10n'     => array(
+                'uploaderTitle'      => __( 'Chose menu image', 'disney' ),
+                'uploaderButtonText' => __( 'Select', 'disney' ),
+            ),
+            'settings' => array(
+                'nonce' => wp_create_nonce( 'update-menu-item' ),
+            ),
+        )
+        );
+    wp_enqueue_media();
+    wp_enqueue_style( 'editor-buttons' );
+    wp_register_style( 'nav-menu-image', '/wp-content/themes/disney/css/nav-menu-image-admin.css' );
+    wp_enqueue_style( 'nav-menu-image' );
+}
+
+
+/**
+ *  javascript POST handler method, return the thumnail image to js
+ */
+function wp_ajax_set_nav_menu_item_thumbnail() {
+    $json = !empty( $_REQUEST[ 'json' ] );
+
+    $post_ID = intval( $_POST[ 'post_id' ] );
+
+    if ( !current_user_can( 'edit_post', $post_ID ) ) {
+        wp_die( - 1 );
+    }
+    $thumbnail_id = intval( $_POST[ 'thumbnail_id' ] );
+    check_ajax_referer( "update-menu-item" );
+    $success = ( $thumbnail_id == '-1' ) ? delete_post_thumbnail( $post_ID ) : set_post_thumbnail( $post_ID, $thumbnail_id );
+
+    if ( $success ) {
+        $return = wp_post_thumbnail_only_html( $post_ID );
+        $json ? wp_send_json_success( $return ) : wp_die( $return );
+    }
+    wp_die( 0 );
+}
+
+function menu_image_nav_menu_manage_columns( $columns ) {
+    return $columns + array( 'image' => __( 'Image', 'disney' ) );
+}
+
+// save menu image to post meta.
+function menu_image_save_post_action( $post_id, $post ) {
+    $menu_image_settings = array(
+        'menu_item_image_size',
+        'menu_item_image_title_position'
+    );
+    foreach ( $menu_image_settings as $setting_name ) {
+        if ( isset( $_POST[ $setting_name ][ $post_id ] ) && !empty( $_POST[ $setting_name ][ $post_id ] ) ) {
+            if ( $post->{"_$setting_name"} != $_POST[ $setting_name ][ $post_id ] ) {
+                update_post_meta( $post_id, "_$setting_name", esc_sql( $_POST[ $setting_name ][ $post_id ] ) );
+            }
+        }
+    }
+}
+
+/**
+ * When menu item removed remove menu image metadata.
+ */
+function menu_image_delete_menu_item_image_action() {
+    $menu_item_id = (int) $_REQUEST[ 'menu-item' ];
+    check_admin_referer( 'delete-menu_item_image_' . $menu_item_id );
+
+    if ( is_nav_menu_item( $menu_item_id ) && has_post_thumbnail( $menu_item_id ) ) {
+        delete_post_thumbnail( $menu_item_id );
+        delete_post_meta( $menu_item_id, '_thumbnail_hover_id' );
+        delete_post_meta( $menu_item_id, '_menu_item_image_size' );
+        delete_post_meta( $menu_item_id, '_menu_item_image_title_position' );
+    }
+}
+/**Add menu-image end**/=======
+
+	if ($nav) {
+		return $nav->name;
+	} else {
+		return false;
+	}
+}>>>>>>> .r45799

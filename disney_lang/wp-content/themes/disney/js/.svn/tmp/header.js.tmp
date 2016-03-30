@@ -1,0 +1,30 @@
+( function( $ ) {
+	$(window).resize(function() {
+		if ($(".sidebar-div").css("height") < getContentHeight()) {
+			$(".sidebar-div").css("height",getContentHeight());
+		}
+		
+		 if ($("#primary-navigation .container-fluid .navbar-header button").css("display") == "none") {
+			  $("div.mainMenuBar.navbar-collapse.in").attr("class","mainMenuBar navbar-collapse collapse");
+			  $(".mobileMenuBar").hide();
+		  }
+		});
+	
+	$("#primary-navigation .navbar-toggle").click(function() {
+		$(".mobileMenuBar").slideToggle();
+	});
+	
+<<<<<<< .mine
+	if ($(".sidebar-div").css("height") < getContentHeight()) {
+			$(".sidebar-div").css("height",getContentHeight());
+		}
+=======
+	if ($(".sidebar-div").css("height") < getContentHeight()) {
+		$(".sidebar-div").css("height",getContentHeight());
+	}
+>>>>>>> .r45627
+
+	function getContentHeight() {
+		return $(".post-div").css("height");
+	}
+} )( jQuery );

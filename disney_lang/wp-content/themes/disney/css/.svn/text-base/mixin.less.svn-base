@@ -1,0 +1,12 @@
+@import (reference) "../bootstrap/less/mixins.less";
+
+.padding-left-right-zero {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.box-shadow(@values) {
+    box-shadow: @values;
+    -webkit-box-shadow: @values;
+    -moz-box-shadow: @values;
+}

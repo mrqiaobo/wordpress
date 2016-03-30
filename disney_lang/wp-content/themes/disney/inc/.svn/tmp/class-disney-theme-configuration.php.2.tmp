@@ -1,0 +1,146 @@
+<?php
+class Disney_Theme_Configuration {
+	function __construct() {
+		add_theme_support ( 'post-thumbnails' );
+		add_theme_support ( 'menus' );
+
+		remove_action ( 'welcome_panel', 'wp_welcome_panel' );
+		remove_action ( 'wp_head', 'wp_generator' );
+
+		add_filter ( 'show_admin_bar', '__return_false' );
+		add_filter ( 'screen_options_show_screen', '__return_false' );
+
+		if (function_exists ( 'register_nav_menu' )) {
+			register_nav_menu ( 'navigation-menu', __ ( 'navigation', 'disney' ) );
+			register_nav_menu ( 'links-menu', __ ( 'links', 'disney' ) );
+			register_nav_menu ( 'tile-menu', __ ( 'tile', 'disney' ) );
+			register_nav_menu ( 'gallery-menu', __ ( 'gallery', 'disney' ) );
+		}
+		
+		add_action ( 'admin_init', array (
+				$this,
+				'remove_post_type_support' 
+		) );
+		add_action ( 'after_setup_theme', array (
+				$this,
+				'my_theme_setup'
+		) );
+		add_filter ( 'get_avatar', array (
+				$this,
+				'disney_get_ssl_avatar'
+		) );
+		add_filter ( 'contextual_help', array (
+				$this,
+				'disney_remove_help'
+		), 999, 3 );
+		add_filter ( 'login_headerurl', array (
+				$this,
+				'disney_login_headerurl'
+		) );
+		add_filter ( 'admin_footer_text', array (
+				$this,
+				'disney_left_admin_footer_text'
+		) );
+		add_filter ( 'update_footer', array (
+				$this,
+				'disney_right_admin_footer_text'
+		), 999 );
+
+		add_action ( 'login_head', array (
+				$this,
+				'disney_login_head'
+		) );
+		add_action ( 'admin_menu', array (
+				$this,
+				'disney_adjust_menus'
+		) );
+		add_action ( 'wp_before_admin_bar_render', array (
+				$this,
+				'disney_before_admin_bar_render'
+		) );
+		add_filter ( 'manage_edit-post_columns', array (
+				$this,
+				'disney_adjust_post_colums'
+		) );
+	}
+	function remove_post_type_support() {
+		remove_post_type_support ( 'post', 'comments' );
+		remove_post_type_support ( 'post', 'trackbacks' );
+	}
+	function my_theme_setup() {
+		load_theme_textdomain ( 'disney', get_template_directory () . '/languages' );
+	}
+	function disney_right_admin_footer_text() {
+		return "";
+	}
+	function disney_get_ssl_avatar($avatar) {
+		$avatar = preg_replace ( '/.*\/avatar\/(.*)\?s=([\d]+)&.*/', '<img src="https://secure.gravatar.com/avatar/$1?s=$2" class="avatar avatar-$2" height="$2" width="$2">', $avatar );
+		return $avatar;
+	}
+	function disney_remove_help($old_help, $screen_id, $screen) {
+		$screen->remove_help_tabs ();
+		return $old_help;
+	}
+	function disney_login_headerurl() {
+		return get_bloginfo ( 'url' );
+	}
+	function disney_login_head() {
+		$background_image = get_bloginfo ( 'template_directory' ) . "/images/logo.png";
+		echo "
+		<style>
+		.login h1 a {
+			width: 160px;
+			height: 84px;
+			background: url($background_image) no-repeat transparent !important;
+	}
+
+	</style>\n";
+	}
+	function disney_before_admin_bar_render() {
+		global $wp_admin_bar;
+		$wp_admin_bar->remove_menu ( 'wp-logo' );
+		$wp_admin_bar->remove_menu ( 'new-content' );
+		$wp_admin_bar->remove_menu ( 'comments' );
+		$wp_admin_bar->remove_menu ( 'updates' );
+	}
+	function disney_adjust_menus() {
+<<<<<<< .mine
+		remove_menu_page ( 'edit-comments.php' ); // Comments
+		remove_menu_page ( 'themes.php' ); // Appearance
+		remove_menu_page ( 'plugins.php' ); // Plugins
+		remove_menu_page ( 'tools.php' ); // Tools
+// 		remove_menu_page ( 'options-general.php' ); // Settings
+		remove_menu_page ( 'upload.php' ); // Media
+=======
+// 		remove_menu_page ( 'edit-comments.php' ); // Comments
+// 		remove_menu_page ( 'themes.php' ); // Appearance
+// 		remove_menu_page ( 'plugins.php' ); // Plugins
+// 		remove_menu_page ( 'tools.php' ); // Tools
+// 		remove_menu_page ( 'options-general.php' ); // Settings
+// 		remove_menu_page ( 'upload.php' ); // Media
+>>>>>>> .r45872
+
+// 		remove_submenu_page ( 'edit.php', 'edit-tags.php?taxonomy=post_tag' );
+// 		remove_submenu_page ( 'index.php', 'update-core.php' );
+
+
+// 		remove_meta_box ( 'commentsdiv', 'post', 'normal' );
+// 		remove_meta_box ( 'commentstatusdiv', 'post', 'normal' );
+// 		remove_meta_box ( 'tagsdiv-post_tag', 'post', 'normal' );
+// 		remove_meta_box ( 'trackbacksdiv', 'post', 'normal' );
+// 		remove_meta_box ( 'postexcerpt', 'post', 'normal' );
+// 		remove_meta_box ( 'postcustom', 'post', 'normal' );
+
+// 		add_submenu_page ( 'edit.php', __ ( 'Menu', 'disney' ), __ ( 'Menu', 'disney' ), 'administrator', 'nav-menus.php' );
+	}
+	function disney_left_admin_footer_text() {
+		return "";
+	}
+	function disney_adjust_post_colums($columns) {
+		unset ( $columns ['tags'] );
+		unset ( $columns ['comments'] );
+		return $columns;
+	}
+}
+
+new Disney_Theme_Configuration ();

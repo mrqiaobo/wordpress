@@ -1,0 +1,74 @@
+﻿@import (reference) "../bootstrap/less/variables.less";
+// base
+@base-background-color: #fff;
+@base-color: #444;
+@base-font-family: Song;
+@base-font-size: 12px;
+@base-line-height: 15px;
+@h1-color: #763046;
+@h2-color: #BC8157;
+
+// background
+@home-background-image: none;
+@home-background-color: none;
+
+@others-background-image: none;
+@others-background-color: none;
+
+// gallery
+@gallery-margin: -30px 0 0 0;
+
+// tile
+@tile-background-color: #fff;
+@tile-width: 77px;
+@tile-height: 138px;
+@tile-color: #585858;
+@tile-border-radius: 15px;
+
+// footer (links)
+@footer-color: #535C61;
+@footer-background-color: #EBF6FC;
+
+// copyright
+@home-copyright-color: @footer-color;
+@other-copyright-color: #444444;
+
+// navbar
+@custom-navbar-height: @navbar-height;
+@navbar-background: #4FA2FE;
+@navbar-margin: 0;
+@navbar-font-family: '微软雅黑';
+
+// logo
+@logo-height: 67px;
+@logo-width: 140px;
+@logo-margin: 0 37px 0 @grid-gutter-width/2 + 34;
+
+// primary menu nav item
+@nav-item-max-width: 160px;
+@nav-item-padding: 0 20px 0 20px;
+@nav-item-color: #fff;
+@nav-item-focus-color: #fff;
+@nav-item-height: @custom-navbar-height;
+@nav-item-font-size: 14px;
+
+// sub menu nav item
+@nav-item-submenu-font-size: 14px;
+@nav-item-submenu-color: #737476;
+@nav-item-submenu-focus-color: #737476;
+@nav-item-submenu-background: #FFF;     
+@nav-item-submenu-focus-background: #C1E7F1;
+@nav-item-submenu-padding: 0 0 0 10px;
+@nav-item-submenu-min-width: 93px;
+@nav-item-submenu-title-block-color: #EBF6FC;
+
+//side bar
+@side-bar-title-block-color: #EBF6FC;
+@side-bar-h1-padding: 30px 0 25px 80px;
+@isde-bar-description-padding: 60px 80px 0 80px;
+@side-bar-h1-font-color: #505457;
+@side-bar-h1-font-size: 1.3em;
+
+//first category
+@first-category-content-padding: 60px 80px;
+@first-category-content-title-padding: 0 0 0 20px;

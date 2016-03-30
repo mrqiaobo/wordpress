@@ -1,0 +1,148 @@
+<html <?php language_attributes(); ?> >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><?php bloginfo( 'blogname' ); ?></title>
+
+<meta http-equiv="Content-Language" content="en">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!--
+
+<link rel="stylesheet" type="text/css"
+	href="<?php bloginfo('template_directory')?>/css/global.css">
+
+<link rel="stylesheet" media="screen" type="text/css"
+	href="<?php bloginfo('template_directory')?>/css/constructionCorp1.css">
+
+<link rel="stylesheet" media="screen" type="text/css"
+	href="<?php bloginfo('template_directory')?>/css/formCorp.css">
+
+<link rel="stylesheet" media="screen" type="text/css"
+	href="<?php bloginfo('template_directory')?>/css/company.css">
+
+<link rel="stylesheet" media="print" type="text/css"
+	href="<?php bloginfo('template_directory')?>/css/globalPrint.css">
+ -->
+
+<!--
+
+global 		-> style.css
+navigation 	-> navigation.css
+content	 	-> content.css
+footer  	-> footer.css
+
+-->
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/bootstap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/style.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/navigation.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/content.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/footer.css">
+<?php if (is_home()) { ?>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/splash.css">
+<?php } ?>
+<script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/js/jquery-1.11.1.min.js"></script>
+ <script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/bootstap/js/bootstrap.min.js"></script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!--
+
+<script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/js/jquery-1.4.4.min.js"></script>
+<script language="JavaScript" type="text/javascript"s
+	src="<?php bloginfo('template_directory')?>/js/toolsCorp.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/js/search.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/js/functions.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/js/formControl.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/js/flashjs.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="<?php bloginfo('template_directory')?>/js/global.js"></script>
+ -->
+
+<?php wp_head(); ?>
+
+</head>
+<?php
+//Function TEST
+?>
+<body class="HomePage_CORPORATE">
+
+	<div id="globalHeader" class="container">
+	    <div class="toolBar container">
+	    <?php
+			if (function_exists('icl_get_languages')) {
+			 	language_selector_flags();
+			}
+		?>
+	    </div>
+
+    <!-- NAV Begin -->
+	    <nav id="primary-navigation" class="globalNav navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+    	      <div class="navbar-header">
+        	      <button type="button" class="navbar-toggle collapsed"  data-target=".mobileMenuBar"  aria-expanded="false">
+        	      	<span class="sr-only">Toggle navigation</span>
+        	      	<span class="icon-bar"></span>
+        	      	<span class="icon-bar"></span>
+        	      	<span class="icon-bar"></span>
+        	      </button>
+        	       <a  class="logo navbar-brand" href="<?php bloginfo( 'url' ) ?>"></a>
+    	      </div>
+
+    	      <div class="mainMenuBar collapse navbar-collapse">
+    	      		<?php
+    				wp_nav_menu ( array (
+    			      'theme_location' => 'navigation-menu',
+    				  'container'=>false,
+    	              'menu_class' => 'mainMenu nav-menu',
+    	              'menu_id' => 'primary-menu',
+    	              'depth' => 2,
+    	      		) ); ?>
+    	       </div>
+	       </div>
+		</nav>
+
+	</div>
+	<div class="mobileMenuBar">
+        	<?php
+                wp_nav_menu(array(
+                    'theme_location' => 'navigation-menu',
+                    'container' => false,
+                    'menu_class' => 'mainMenu phone-menu ui-widget-content',
+                    'menu_id' => 'phone-menu'
+                ));
+        ?>
+    </div>
+
+	<div class="mainMedia container">
+	<?php if(!is_404()) :?>
+		<?php if (is_home()) :?>
+			<img name="roll_HomeSectionMedia_CORPORATE_zh_CN"
+				galleryimg="no"
+				src="<?php bloginfo( 'template_directory' ) ?>/images/corp-home-mickey-mouse-castle.jpg"
+				class="img-responsive center-block" />
+		<?php else: ?>
+			<img name="roll_AboutOurCompanySectionMedia_CORPORATE_zh_CN"
+				galleryimg="no" src="<?php echo get_the_image_url_from_top_menu_item();?>"
+				class="img-responsive center-block">
+		<?php endif; ?>
+		</div>
+	<?php endif;?>
+
+
+<?php
+	if (!is_home() && !is_404()) {
+?>
+	<div class="container">
+<?php
+	    	get_sidebar();
+	    }
+?>

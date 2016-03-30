@@ -1,0 +1,98 @@
+<html <?php language_attributes(); ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title><?php bloginfo( 'blogname' ); ?></title>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/style.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/navigation.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/content.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/footer.css">
+<?php if (is_home()) { ?>
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/splash.css">
+<?php } ?>
+<script type="text/javascript" src="<?php bloginfo('template_directory')?>/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory')?>/bootstrap/js/bootstrap.min.js"></script>
+
+<?php wp_head(); ?>
+
+</head>
+
+<body class="HomePage_CORPORATE">
+
+  <div id="global-header" class="container">
+    <div class="tool-bar container">
+	    <?php
+					if (function_exists ( 'pll_the_languages' )) {
+						pll_the_languages ();
+					}
+					?>
+	    </div>
+
+    <!-- NAV Begin -->
+    <nav id="primary-navigation" class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="logo navbar-brand" href="<?php bloginfo( 'url' ) ?>"></a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+           <?php
+							wp_nav_menu ( array (
+									'theme_location' => 'navigation-menu',
+									'container' => false,
+									'before' => '<span class="sperator"></span>',
+									'menu_id' => 'primary-menu',
+									'depth' => 2 
+							) );
+						?>
+          </div>
+
+      </div>
+    </nav>
+
+  </div>
+
+  <div class="main-media container">
+	<?php if(!is_404()) :?>
+		<?php if (is_home()) :?>
+        <?php
+<<<<<<< .mine
+        $image_src= get_template_directory()."/images/corp-home-mickey-mouse-castle.jpg";
+        $image_url = "";
+=======
+			$image_src = bloginfo ( 'template_directory' ) . "/images/corp-home-mickey-mouse-castle.jpg";
+			$image_url = "";
+			
+			if ($old_src_str = get_option ( "front-image-src" )) {
+				$front_page_image_srcs = explode ( "~", $old_src_str );
+				$image_src = $front_page_image_srcs [0];
+			}
+			
+			if ($old_link_url_str = get_option ( "front-image-link-url" )) {
+				$front_page_image_urls = explode ( "~", $old_link_url_str );
+				$image_url = $front_page_image_urls [0];
+			}
+			?>
+>>>>>>> .r45765
+
+		<a href="<?php echo $image_url?>"> <img name="roll_HomeSectionMedia_CORPORATE_zh_CN" galleryimg="no" src="<?php echo $image_src ?>" class="img-responsive center-block" />
+    </a>
+		<?php else: ?>
+			<img name="roll_AboutOurCompanySectionMedia_CORPORATE_zh_CN" galleryimg="no" src="<?php echo get_the_image_url_from_top_menu_item();?>" class="img-responsive center-block">
+		<?php endif; ?>
+		</div>
+	<?php endif;?>
+
+
+<?php
+if (! is_home () && ! is_404 ()) {
+	?>
+	<div class="container">
+<?php
+	get_sidebar ();
+}
+?>

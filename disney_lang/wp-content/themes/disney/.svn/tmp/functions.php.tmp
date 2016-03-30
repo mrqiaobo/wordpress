@@ -1,0 +1,301 @@
+<?php
+$disney_top_navigation_name;
+$disney_nav_menu_items;
+$disney_current_page_top_item_id;
+
+add_theme_support ( 'post-thumbnails' );
+add_theme_support ( 'menus' );
+
+remove_action ( 'welcome_panel', 'wp_welcome_panel' );
+remove_action ( 'wp_head', 'wp_generator' );
+
+add_filter ( 'show_admin_bar', '__return_false' );
+add_filter ( 'screen_options_show_screen', '__return_false' );
+
+if (function_exists ( 'register_nav_menu' )) {
+	register_nav_menu ( 'navigation-menu', 'navigation' );
+	register_nav_menu ( 'footer-menu', 'footer' );
+	register_nav_menu ( 'promo-title-menu', 'promoTitle' );
+}
+
+add_filter ( 'login_headerurl', 'disney_login_headerurl' );
+function disney_login_headerurl() {
+	return get_bloginfo ( 'url' );
+}
+
+<<<<<<< .mine
+add_action ( 'wp_before_admin_bar_render', 'disney_before_admin_bar_render' );
+function disney_before_admin_bar_render() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('wp-logo');
+    $wp_admin_bar->remove_menu('new-content');
+    $wp_admin_bar->remove_menu('comments');
+    $wp_admin_bar->remove_menu('updates');
+
+=======
+add_action ( 'wp_before_admin_bar_render', 'disney_before_admin_bar_render' );
+function disney_before_admin_bar_render() {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu ( 'wp-logo' );
+	$wp_admin_bar->remove_menu ( 'new-content' );
+	$wp_admin_bar->remove_menu ( 'comments' );
+	$wp_admin_bar->remove_menu ( 'updates' );
+>>>>>>> .r45730
+}
+
+add_filter ( 'get_avatar', 'disney_get_ssl_avatar' );
+function disney_get_ssl_avatar($avatar) {
+	$avatar = preg_replace ( '/.*\/avatar\/(.*)\?s=([\d]+)&.*/', '<img src="https://secure.gravatar.com/avatar/$1?s=$2" class="avatar avatar-$2" height="$2" width="$2">', $avatar );
+	return $avatar;
+}
+
+add_filter ( "login_redirect", "disney_login_redirect", 10, 2 );
+function disney_login_redirect($redirect_to, $request) {
+	if (empty ( $redirect_to ) || $redirect_to == 'wp-admin/' || $redirect_to == admin_url ())
+		return home_url ( "/wp-admin/edit.php" );
+	else
+		return $redirect_to;
+}
+
+add_action ( 'admin_menu', 'disney_adjust_menus' );
+function disney_adjust_menus() {
+	remove_menu_page ( 'edit-comments.php' ); // Comments
+	remove_menu_page ( 'themes.php' ); // Appearance
+	remove_menu_page ( 'plugins.php' ); // Plugins
+	remove_menu_page ( 'tools.php' ); // Tools
+	remove_menu_page ( 'options-general.php' ); // Settings
+	remove_menu_page ( 'upload.php' ); // Media
+	                                   // remove_menu_page ( 'index.php' ); //admin.php
+	
+	remove_submenu_page ( 'edit.php', 'edit-tags.php?taxonomy=post_tag' );
+	remove_submenu_page ( 'index.php', 'update-core.php' );
+	
+	remove_meta_box ( 'commentsdiv', 'post', 'normal' );
+	remove_meta_box ( 'commentstatusdiv', 'post', 'normal' );
+	remove_meta_box ( 'tagsdiv-post_tag', 'post', 'normal' );
+	remove_meta_box ( 'trackbacksdiv', 'post', 'normal' );
+	remove_meta_box ( 'postexcerpt', 'post', 'normal' );
+	remove_meta_box ( 'postcustom', 'post', 'normal' );
+	
+	add_submenu_page( 'edit.php', __('menu'), __('menu'), 'administrator', 'nav-menus.php');
+}
+
+add_filter ( 'contextual_help', 'disney_remove_help', 999, 3 );
+function disney_remove_help($old_help, $screen_id, $screen) {
+	$screen->remove_help_tabs ();
+	return $old_help;					
+}
+
+add_action ( 'login_head', 'disney_login_head' );
+function disney_login_head() {
+	$background_image = get_bloginfo ( 'template_directory' ) . "/images/nav-logo.png";
+	echo "
+    <style>
+
+        .login h1 a {
+            width: 52px;
+            height: 60px;
+            background: url($background_image) no-repeat transparent; !important
+        }
+
+    </style>\n";
+}
+
+<<<<<<< .mine
+add_filter('admin_footer_text', 'disney_left_admin_footer_text');
+=======
+add_filter ( 'admin_footer_text', 'disney_left_admin_footer_text' );
+>>>>>>> .r45730
+function disney_left_admin_footer_text() {
+	return "";
+}
+
+<<<<<<< .mine
+add_filter('update_footer', 'disney_right_admin_footer_text', 11);
+=======
+add_filter ( 'update_footer', 'disney_right_admin_footer_text', 11 );
+>>>>>>> .r45730
+function disney_right_admin_footer_text() {
+	return "";
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @param $id: curent
+ *        	menu item's id
+ * @param $location :
+ *        	the location for menu
+ * @return the object of top menu item
+ */
+function get_top_menu_item($id, $location = "navigation-menu") {
+	if ($menu_name = get_menu_name_by_location ( $location )) {
+		if ($top_id = get_top_menu_item_id ( $menu_name, $id )) {
+			return get_term ( $top_id );
+		}
+	}
+	return false;
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @param
+ *        	$menu_name
+ * @param
+ *        	$current_term_id
+ * @return the father item's id for current menu item.
+ */
+function get_father_menu_item_id($menu_name, $current_term_id) {
+	if (($current_term_id != 0) && ($menu = get_item_from_nav_menu ( $menu_name, $current_term_id ))) {
+		$parent = get_post_meta ( $menu->menu_item_parent, '_menu_item_object_id' );
+		$result = $parent [0];
+		return $result;
+	}
+	
+	return false;
+}
+
+/**
+ *
+ * @author : Jacob Qiao
+ * @param
+ *        	$menu_name
+ * @param
+ *        	$curent_term_id
+ * @return the top menu item's term_id
+ */
+function get_top_menu_item_id($menu_name, $curent_term_id) {
+	if (($parent_id = get_father_menu_item_id ( $menu_name, $curent_term_id )) === false) {
+		return false;
+	}
+	
+	if ($parent_id == 0) {
+		return $curent_term_id;
+	}
+	return get_top_menu_item_id ( $menu_name, $parent_id );
+}
+
+/**
+ *
+ * @author : Jacob Qiao
+ * @param $menu_name: the
+ *        	menu's name
+ * @param unknown $menu_name        	
+ */
+function get_current_parent_id_from_menu($menu_name) {
+	$current_id = get_queried_object_id ();
+	$parent_menu = get_father_menu_item_id ( $menu_name, $current_id );
+	return $parent_menu;
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @return thumnnail src address from current menu item's super item.
+ */
+function get_the_image_url_from_top_menu_item() {
+	global $disney_top_navigation_name;
+	
+	if (empty ( $disney_top_navigation_name )) {
+		$disney_top_navigation_name = get_menu_name_by_location ();
+	}
+	$menu_name = $disney_top_navigation_name;
+	$current_id = get_queried_object_id ();
+	
+	if ($top_menu_item_id = get_top_menu_item_id ( $menu_name, $current_id )) {
+		$thumbnail_menu_item = get_item_from_nav_menu ( $menu_name, $top_menu_item_id );
+		
+		if ($thumbnail_menu_item != null) {
+			$thumbnail_id = get_post_thumbnail_id ( $thumbnail_menu_item->ID );
+			$srcs = wp_get_attachment_image_src ( $thumbnail_id, "full" ); // px :large >medium > thumbnail >full
+			$src = $srcs [0];
+			
+			return $src;
+		}
+	}
+	
+	return "";
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @param
+ *        	$menu_name
+ * @param
+ *        	$id
+ * @return the object in menu by id.
+ */
+function get_item_from_nav_menu($menu_name, $id) {
+	global $disney_nav_menu_items;
+	
+	if (! isset ( $disney_nav_menu_items )) {
+		$menu = wp_get_nav_menu_object ( $menu_name );
+		$items = wp_get_nav_menu_items ( $menu->term_id, array (
+				'update_post_term_cache' => false 
+		) );
+		$disney_nav_menu_items = $items;
+	}
+	
+	foreach ( $disney_nav_menu_items as $menu_item ) {
+		if ($id == $menu_item->object_id) {
+			return $menu_item;
+		}
+	}
+	return null;
+}
+
+/**
+ *
+ * @author : jacob qiao
+ * @param string $location_name        	
+ * @return return the menu name in the location.
+ */
+function get_menu_name_by_location($location_name = "navigation-menu") {
+	$locations = get_nav_menu_locations ();
+	$nav = wp_get_nav_menu_object ( $locations [$location_name] );
+	
+	if ($nav != false) {
+		return $nav->name;
+	}
+	return false;
+}
+
+add_action('admin_menu', 'add_front_page_management_menu');
+
+/**
+ * @author: jacob qiao
+ */
+function add_front_page_management_menu() {
+    add_menu_page(__("Front Page"), __("Front Page"), "manage_options", "front-page-management-menu","get_front_management_page",'',1);
+}
+
+function get_front_management_page() {
+    require_once get_template_directory().'/view/front_page_management.php';
+}
+
+// Add class Waker_Nav_Menu_Second_Level
+require_once get_template_directory () . '/inc/class-walker-nav-menu-second-level.php';
+require_once get_template_directory () . '/inc/class-walker-promo-tiles-menu.php';
+require_once get_template_directory () . '/inc/class-management-team.php';
+require_once get_template_directory () . '/inc/class-walker-footer.php';
+
+add_action ( 'current_screen', 'conditional_includes' );
+
+function conditional_includes() {
+	$screen = get_current_screen ();
+	if ($screen->id == 'dashboard') {
+		include (get_template_directory () . '/inc/class-disney-dashboard.php');
+	}
+}
+
+function language_selector_flags() {
+	$languages = icl_get_languages ( 'skip_missing=0&orderby=code' );
+	if (! empty ( $languages )) {
+		foreach ( $languages as $l ) {
+			echo '<li class="list-unstyled"><a href="' . $l ['url'] . '">' . $l ['translated_name'] . '</a></li>';
+		}
+	}
+}
+

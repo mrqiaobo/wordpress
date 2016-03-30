@@ -1,0 +1,125 @@
+html, body, form, div{
+    border: 0px solid;
+    margin: auto;
+    padding: 0px;
+    vertical-align: top;
+}
+
+body {
+    background-color: @base-background-color;
+    color: @base-color;
+    font-family: @base-font-family;
+    font-size: @base-font-size;
+}
+
+p, ul {
+    text-align: left;
+    line-height: @base-line-height;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 1.7em;
+    text-align: left;
+    font-weight: bold;
+    color: @h1-color;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.4em;
+    color: @h2-color;
+}
+
+body {
+    background-image: @others-background-image;
+    background-color: @others-background-color;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    font-family: @base-font-family;
+    font-size: @base-font-size;
+    text-align: center;
+}
+
+.main-media {
+    .padding-left-right-zero;
+
+    #carousel-id {
+        margin: @gallery-margin;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#promo-tiles {
+    padding: 20px 0;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: bold;
+
+    a {
+        color: @tile-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .promo-box {
+        width: @tile-width;
+        height: @tile-height;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: @tile-height * 0.8;
+            border-top-left-radius: @tile-border-radius;
+            border-top-right-radius: @tile-border-radius;
+        }
+
+        span {
+            line-height: @tile-height * 0.2;
+            font-size: 1.2em;
+        }
+    }
+}
+
+#footer {
+    padding: 20px 0 15px;
+    background-color: @footer-background-color;
+
+    .footer-link-row {
+        padding: 0 0 5px;
+
+        .footer-link {
+            padding: 5px;
+
+            a {
+                color: @footer-color;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+#home-copyright {
+    color: @home-copyright-color;
+}
+
+#copyright {
+    color: @other-copyright-color;
+}
+
+#home-copyright, #copyright {
+    position: relative;
+    height: 100px;
+    padding: 25px 0;
+}
+
+.main-media .carousel .carousel-inner {
+  max-height: 539px;
+}

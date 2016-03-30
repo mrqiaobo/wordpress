@@ -1,0 +1,48 @@
+[02-Mar-2016 09:34:09] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 151
+[02-Mar-2016 09:34:09] PHP Warning:  Invalid argument supplied for foreach() in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 153
+[02-Mar-2016 09:34:15] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 151
+[02-Mar-2016 09:34:15] PHP Warning:  Invalid argument supplied for foreach() in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 153
+[02-Mar-2016 09:34:19] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 151
+[02-Mar-2016 09:34:19] PHP Warning:  Invalid argument supplied for foreach() in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 153
+[02-Mar-2016 09:34:56] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 151
+[02-Mar-2016 09:34:56] PHP Warning:  Invalid argument supplied for foreach() in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 153
+[02-Mar-2016 09:34:59] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 151
+[02-Mar-2016 09:34:59] PHP Warning:  Invalid argument supplied for foreach() in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 153
+[02-Mar-2016 09:41:16] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 150
+[02-Mar-2016 09:41:16] PHP Warning:  Invalid argument supplied for foreach() in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 152
+[02-Mar-2016 09:44:30] PHP Notice: A feed could not be found at http://cn.wordpress.org/feed/. A feed with an invalid mime type may fall victim to this error, or SimplePie was unable to auto-discover it.. Use force_feed() if you are certain this URL is a real feed. in D:\htdocs\disney\wp-includes\class-simplepie.php on line 1580
+[02-Mar-2016 09:44:32] PHP Notice: A feed could not be found at http://wordpress.org/plugins/rss/browse/popular/. A feed with an invalid mime type may fall victim to this error, or SimplePie was unable to auto-discover it.. Use force_feed() if you are certain this URL is a real feed. in D:\htdocs\disney\wp-includes\class-simplepie.php on line 1580
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:01] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:02] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:02] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:02] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:02] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:02] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:12] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:13] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:13] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:13] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:13] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74
+[02-Mar-2016 09:47:13] PHP Notice:  Trying to get property of non-object in D:\htdocs\disney\wp-content\themes\disney\functions.php on line 74

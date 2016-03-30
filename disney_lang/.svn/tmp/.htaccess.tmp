@@ -1,0 +1,25 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+<<<<<<< .mine
+RewriteBase /disney_lang/
+=======
+RewriteBase /disney/
+>>>>>>> .r45872
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+<<<<<<< .mine
+RewriteRule . /disney_lang/index.php [L]
+=======
+RewriteRule . /disney/index.php [L]
+>>>>>>> .r45872
+</IfModule>
+
+php_value upload_max_filesize 10M 
+php_value post_max_size 10M 
+php_value max_execution_time 300 
+php_value max_input_time 300 
+
+# END WordPress
